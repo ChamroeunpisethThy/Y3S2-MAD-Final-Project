@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="#fff" /> <!-- Set grey color to the inside #39231C -->
+    <corners
+        android:radius="20dp"/>
+    <corners
+        android:radius="20dp" />
+    <stroke
+        android:width="2dp"
+        android:color="#e7edf9" /> <!--  stroke for defining a border for view -->
+
+    <size
+        android:height="40dp"
+        android:width="40dp" />
+</shape>
