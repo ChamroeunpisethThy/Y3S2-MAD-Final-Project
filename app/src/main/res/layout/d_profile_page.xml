@@ -69,28 +69,6 @@
 
         </RelativeLayout>
 
-        <!-- More text -->
-        <LinearLayout
-            android:id="@+id/profile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/header">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginEnd="10dp"
-
-                android:text="Profile"
-                android:textColor="#000000"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
-        </LinearLayout>
-
         <!-- Account -->
         <androidx.cardview.widget.CardView
             android:id="@+id/card"
@@ -100,8 +78,8 @@
             android:layout_below="@id/header"
             android:layout_centerInParent="true"
 
-            android:layout_marginTop="50dp"
-            app:cardBackgroundColor="#515050"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="#673AB7"
             app:cardCornerRadius="10dp">
 
             <!-- Card Layout -->
@@ -117,7 +95,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="10dp"
                     android:src="@drawable/ic_action_profile1" />
 
                 <LinearLayout
@@ -323,7 +301,7 @@
 
         <!-- More text -->
         <LinearLayout
-            android:id="@+id/more"
+            android:id="@+id/moreText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/account">
@@ -345,11 +323,11 @@
 
         <!-- More layout -->
         <androidx.cardview.widget.CardView
-            android:id="@+id/more_"
+            android:id="@+id/more"
 
             android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/more"
+            android:layout_below="@id/moreText"
             android:layout_centerInParent="true"
 
             android:layout_marginTop="5dp"
@@ -426,44 +404,69 @@
                         android:textSize="18dp"/>
 
                 </LinearLayout>
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="1dp"
-                    android:background="#454545"
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/logoutText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/more">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+
+                android:text="Logout"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logout"
+
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoutText"
+            android:layout_centerInParent="true"
+
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="15dp"
+
+                    android:src="@drawable/ic_action_logout"/>
+
+                <!-- Help and Support -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
 
                     android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginHorizontal="15dp"
-
-                        android:src="@drawable/ic_action_logout"/>
-
-                    <!-- Help and Support -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginBottom="10dp"
-                        android:text="Logout"
-                        android:textColor="#000"
-                        android:textSize="18dp"/>
-
-                </LinearLayout>
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Logout"
+                    android:textColor="#000"
+                    android:textSize="18dp"/>
 
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
 
