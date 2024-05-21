@@ -4,20 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backGroundColor">
+    android:background="#e7edf9">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <!-- Header -->
-
         <RelativeLayout
             android:id="@+id/header"
 
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/headerBar">
+            android:background="#f0f0f0">
 
             <ImageView
                 android:id="@+id/dehaze"
@@ -36,11 +35,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:layout_alignStart="@id/dehaze"
+                android:layout_alignLeft="@id/dehaze"
 
                 android:layout_centerInParent="true"
                 android:layout_marginStart="50dp"
-                android:text="@string/profilePage"
+                android:text="Profile"
                 android:textColor="#000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -81,7 +80,7 @@
             android:layout_centerInParent="true"
 
             android:layout_marginTop="10dp"
-            app:cardBackgroundColor="@color/card"
+            app:cardBackgroundColor="#673AB7"
             app:cardCornerRadius="10dp">
 
             <!-- Card Layout -->
@@ -116,7 +115,7 @@
                         android:layout_height="wrap_content"
 
                         android:layout_marginEnd="90dp"
-                        android:text="@string/welcomeProfilePage"
+                        android:text="Welcome Visoth"
                         android:textColor="#FFFFFF"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -124,9 +123,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@id/text1"
 
                         android:layout_marginTop="3dp"
-                        android:text="@string/roleProfilePage"
+                        android:text="Role: Student"
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"/>
@@ -135,7 +135,6 @@
         </androidx.cardview.widget.CardView>
 
         <!-- My account layout -->
-
         <androidx.cardview.widget.CardView
             android:id="@+id/account"
 
@@ -182,7 +181,7 @@
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="5dp"
-                            android:text="@string/myAccount"
+                            android:text="My Account"
                             android:textColor="#000"
                             android:textSize="20sp" />
 
@@ -192,7 +191,7 @@
 
                             android:layout_marginStart="20dp"
                             android:layout_marginBottom="10dp"
-                            android:text="@string/myAccountText"
+                            android:text="Make change to your account"
                             android:textColor="#000"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -234,7 +233,7 @@
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="5dp"
-                            android:text="@string/requestAsAdmin"
+                            android:text="Request As Admin"
                             android:textColor="#000"
                             android:textSize="20sp" />
 
@@ -244,7 +243,7 @@
 
                             android:layout_marginStart="20dp"
                             android:layout_marginBottom="10dp"
-                            android:text="@string/requestAsAdminText"
+                            android:text="Manage your saved account"
                             android:textColor="#000"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -287,7 +286,7 @@
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="5dp"
-                            android:text="@string/twoFactorAuthentication"
+                            android:text="Two-Factor Authentication"
                             android:textColor="#000"
                             android:textSize="20sp" />
 
@@ -297,7 +296,7 @@
 
                             android:layout_marginStart="20dp"
                             android:layout_marginBottom="10dp"
-                            android:text="@string/twoFactorAuthenticationText"
+                            android:text="Further secure your account for safety"
                             android:textColor="#000"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -305,6 +304,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- More text -->
         <LinearLayout
             android:id="@+id/moreText"
             android:layout_width="match_parent"
@@ -320,12 +320,13 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="5dp"
 
-                android:text="@string/settingText"
+                android:text="Setting"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
+        <!-- More layout -->
         <androidx.cardview.widget.CardView
             android:id="@+id/more"
 
@@ -367,7 +368,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="15dp"
                         android:layout_marginBottom="10dp"
-                        android:text="@string/helpAndSupport"
+                        android:text="Help and Support"
                         android:textColor="#000"
                         android:textSize="20sp" />
 
@@ -404,7 +405,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="15dp"
                         android:layout_marginBottom="10dp"
-                        android:text="@string/aboutApp"
+                        android:text="About app"
                         android:textColor="#000"
                         android:textSize="20sp" />
 
@@ -427,7 +428,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="5dp"
 
-                android:text="@string/logoutText"
+                android:text="Logout"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -466,7 +467,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/logoutButtonProfilePage"
+                    android:text="Logout"
                     android:textColor="#000"
                     android:textSize="20sp" />
 

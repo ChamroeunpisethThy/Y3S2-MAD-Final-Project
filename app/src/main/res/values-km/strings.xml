@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">MAD Project</string>
 
-<!-- Login and Signup Page -->
-    <string name="welcomeLoginPage">Welcome Back</string>
+    <!-- Login and Signup Page -->
+    <string name="welcomeLoginPage">ស្វាគមន៏ត្រឡប់មកវិញ</string>
     <string name="emailInput">Email</string>
     <string name="passwordInput">Password</string>
-    <string name="forgotPassword">Forgot Password?</string>
+    <string name="forgotPassword">ភ្លេចលេខសំងាត់?</string>
     <string name="loginButton">Login</string>
     <string name="noAccount">Don\'t have an account?</string>
 
@@ -16,7 +16,7 @@
     <string name="haveAccount">Have an account?</string>
     <string name="loginText">Login</string>
 
-<!-- Home Page -->
+    <!-- Home Page -->
     <string name="homePage">Home</string>
     <string name="ITEngineering">IT Engineering</string>
     <string name="bioEngineering">Bio Engineering</string>

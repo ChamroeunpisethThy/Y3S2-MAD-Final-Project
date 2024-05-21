@@ -4,20 +4,19 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backGroundColor">
+    android:background="#e7edf9">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <!-- Header -->
-
         <RelativeLayout
             android:id="@+id/header"
 
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/headerBar">
+            android:background="#f0f0f0">
 
             <ImageView
                 android:id="@+id/dehaze"
@@ -36,12 +35,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:layout_alignStart="@id/dehaze"
+                android:layout_alignLeft="@id/dehaze"
 
                 android:layout_centerInParent="true"
                 android:layout_marginStart="50dp"
-                android:text="@string/homePage"
-                android:textColor="@color/black"
+                android:text="Home"
+                android:textColor="#000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -79,7 +78,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header">
 
                 <android.widget.SearchView
                     android:id="@+id/search_bar"
@@ -99,9 +99,9 @@
                     android:id="@+id/recenlySearch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/search_bar"
                     android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp">
+                    android:layout_marginEnd="10dp"
+                    android:layout_below="@id/search_bar">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -113,42 +113,42 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="5dp"
-                            android:backgroundTint="@color/snow"
+                            android:backgroundTint="#fffafa"
 
-                            android:text="@string/ITEngineering"
+                            android:text="IT Engineering"
                             android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
 
                         <Button
                             android:id="@+id/button2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="5dp"
-                            android:backgroundTint="@color/snow"
+                            android:backgroundTint="#fffafa"
 
-                            android:text="@string/bioEngineering"
+                            android:text="Bio Engineering"
                             android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
 
                         <Button
                             android:id="@+id/button3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="5dp"
-                            android:backgroundTint="@color/snow"
+                            android:backgroundTint="#fffafa"
 
-                            android:text="@string/dataScience"
+                            android:text="Data Science"
                             android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
 
                     </LinearLayout>
                 </HorizontalScrollView>
 
                 <RelativeLayout
-                    android:id="@+id/recommand"
+                    android:id="@+id/search_badge"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@id/recenlySearch"
@@ -162,42 +162,69 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
-                        android:layout_centerVertical="true"
-                        android:text="@string/recommendation"
-                        android:textColor="@color/blue"
+                        android:textColor="#3F51B5"
                         android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
 
-                        android:textStyle="bold" />
+                        android:text="Recommandation " />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:text="@string/seeAll"
-
-                        android:textColor="@color/gray"
+                        android:textColor="#616161"
                         android:textSize="16sp"
+                        android:textStyle="bold"
 
-                        android:textStyle="bold" />
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+
+                        android:text="View all" />
 
                 </RelativeLayout>
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/view1"
+                <RelativeLayout
+                    android:id="@+id/image"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/recommand"
-                    android:layout_marginTop="5dp"
-                    android:paddingStart="15dp"
-                    android:paddingEnd="15dp" />
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/search_badge"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/picture1"
+                        android:layout_width="195dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/felogo"
+                        android:background="#123456"
+
+                        />
+
+                    <ImageButton
+                        android:layout_width="195dp"
+                        android:layout_height="170dp"
+                        android:layout_alignParentEnd="true"/>
+
+                    <ImageButton
+                        android:layout_width="195dp"
+                        android:layout_height="170dp"
+                        android:layout_below="@id/picture1"/>
+
+                    <ImageButton
+                        android:layout_width="195dp"
+                        android:layout_height="170dp"
+                        android:layout_below="@id/picture1"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
 
                 <RelativeLayout
-                    android:id="@+id/favoriteText"
+                    android:id="@+id/favorited"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_below="@id/view1"
+                    android:layout_below="@id/image"
 
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="5dp"
@@ -208,43 +235,68 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
-                        android:layout_centerVertical="true"
-                        android:text="@string/favorited"
-                        android:textColor="@color/blue"
+                        android:textColor="#3F51B5"
                         android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
 
-                        android:textStyle="bold" />
+                        android:text="Favorite " />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:text="@string/seeAll"
-
-                        android:textColor="@color/gray"
+                        android:textColor="#616161"
                         android:textSize="16sp"
+                        android:textStyle="bold"
 
-                        android:textStyle="bold" />
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+
+                        android:text="View all" />
 
                 </RelativeLayout>
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/view2"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/favoriteText"
-                    android:layout_marginTop="5dp"
-                    android:paddingStart="15dp"
-                    android:paddingEnd="15dp" />
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/favorited"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageButton
+                        android:id="@+id/picture3"
+                        android:layout_width="195dp"
+                        android:layout_height="170dp"/>
+
+                    <ImageButton
+                        android:layout_width="195dp"
+                        android:layout_height="170dp"
+                        android:layout_alignParentEnd="true"/>
+
+                    <ImageButton
+                        android:layout_width="195dp"
+                        android:layout_height="170dp"
+                        android:layout_below="@id/picture3"/>
+
+                    <ImageButton
+                        android:layout_width="195dp"
+                        android:layout_height="170dp"
+                        android:layout_below="@id/picture3"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+
 
 
             </RelativeLayout>
 
 
-        </ScrollView>
 
+
+
+        </ScrollView>
 
     </RelativeLayout>
 
