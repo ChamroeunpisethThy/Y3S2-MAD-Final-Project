@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backGroundColor">
+    android:background="@color/backgroundColor">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="700dp"
-                android:background="@color/white">
+                android:background="@color/backgroundCard">
 
                 <ImageView
                     android:id="@+id/logo"
@@ -45,7 +45,7 @@
                     android:textAlignment="center"
 
 
-                    android:textColor="@color/black"
+                    android:textColor="@color/primaryColor"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -61,7 +61,7 @@
 
                     android:padding="16dp"
                     android:text="@string/emailInput"
-                    android:textColor="@color/black"
+                    android:textColor="@color/primaryColor"
                     android:textSize="18sp" />
 
                 <EditText
@@ -76,7 +76,7 @@
 
                     android:padding="16dp"
                     android:text="@string/passwordInput"
-                    android:textColor="@color/black"
+                    android:textColor="@color/primaryColor"
                     android:textSize="18sp" />
 
                 <EditText
@@ -91,7 +91,7 @@
 
                     android:padding="16dp"
                     android:text="@string/confirmPasswordInput"
-                    android:textColor="@color/black"
+                    android:textColor="@color/primaryColor"
                     android:textSize="18sp" />
 
                 <!-- Login button -->
@@ -109,7 +109,7 @@
                     android:padding="12dp"
                     android:text="@string/signupButton"
                     android:textAllCaps="false"
-                    android:textColor="@color/white"
+                    android:textColor="@color/secondaryColor"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -129,7 +129,7 @@
                         android:padding="5dp"
 
                         android:text="@string/haveAccount"
-                        android:textColor="@color/black"
+                        android:textColor="@color/primaryColor"
                         android:textSize="18sp" />
 
                     <!-- Create an account -->
@@ -140,7 +140,7 @@
                         android:padding="5dp"
 
                         android:text="@string/loginText"
-                        android:textColor="@color/clickText"
+                        android:textColor="@color/tertiaryColor"
                         android:textSize="18sp" />
 
                 </LinearLayout>

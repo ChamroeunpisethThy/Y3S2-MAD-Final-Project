@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backGroundColor">
+    android:background="@color/backgroundColor">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
                 android:layout_centerInParent="true"
                 android:layout_marginStart="50dp"
                 android:text="@string/profilePage"
-                android:textColor="#000"
+                android:textColor="@color/headerText"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -91,6 +91,7 @@
 
                 <!-- Account -->
                 <ImageView
+                    android:id="@+id/profile"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
 
@@ -104,9 +105,10 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
+                    android:layout_alignStart="@id/profile"
                     android:layout_centerVertical="true"
+                    android:layout_marginStart="80dp"
+
                     android:orientation="vertical">
 
                     <TextView
@@ -117,7 +119,7 @@
 
                         android:layout_marginEnd="90dp"
                         android:text="@string/welcomeProfilePage"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/secondaryColor"
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
@@ -127,9 +129,9 @@
 
                         android:layout_marginTop="3dp"
                         android:text="@string/roleProfilePage"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/secondaryColor"
                         android:textSize="18sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -145,7 +147,7 @@
             android:layout_centerInParent="true"
 
             android:layout_marginTop="10dp"
-            app:cardBackgroundColor="#fff"
+            app:cardBackgroundColor="@color/backgroundCard"
             app:cardCornerRadius="10dp">
 
             <LinearLayout
@@ -183,7 +185,7 @@
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="5dp"
                             android:text="@string/myAccount"
-                            android:textColor="#000"
+                            android:textColor="@color/primaryColor"
                             android:textSize="20sp" />
 
                         <TextView
@@ -193,7 +195,7 @@
                             android:layout_marginStart="20dp"
                             android:layout_marginBottom="10dp"
                             android:text="@string/myAccountText"
-                            android:textColor="#000"
+                            android:textColor="@color/primaryColor"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -235,7 +237,7 @@
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="5dp"
                             android:text="@string/requestAsAdmin"
-                            android:textColor="#000"
+                            android:textColor="@color/primaryColor"
                             android:textSize="20sp" />
 
                         <TextView
@@ -245,7 +247,7 @@
                             android:layout_marginStart="20dp"
                             android:layout_marginBottom="10dp"
                             android:text="@string/requestAsAdminText"
-                            android:textColor="#000"
+                            android:textColor="@color/primaryColor"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -288,7 +290,7 @@
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="5dp"
                             android:text="@string/twoFactorAuthentication"
-                            android:textColor="#000"
+                            android:textColor="@color/primaryColor"
                             android:textSize="20sp" />
 
                         <TextView
@@ -298,7 +300,7 @@
                             android:layout_marginStart="20dp"
                             android:layout_marginBottom="10dp"
                             android:text="@string/twoFactorAuthenticationText"
-                            android:textColor="#000"
+                            android:textColor="@color/primaryColor"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -321,7 +323,7 @@
                 android:layout_marginBottom="5dp"
 
                 android:text="@string/settingText"
-                android:textColor="#000000"
+                android:textColor="@color/primaryColor"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -335,7 +337,7 @@
             android:layout_centerInParent="true"
 
             android:layout_marginTop="5dp"
-            app:cardBackgroundColor="#fff"
+            app:cardBackgroundColor="@color/backgroundCard"
             app:cardCornerRadius="10dp">
 
 
@@ -368,7 +370,7 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginBottom="10dp"
                         android:text="@string/helpAndSupport"
-                        android:textColor="#000"
+                        android:textColor="@color/primaryColor"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -384,7 +386,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="40dp"
@@ -393,8 +396,8 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-
-                        android:src="@drawable/ic_action_about" />
+                        android:src="@drawable/ic_action_about"
+                        android:contentDescription="@string/aboutApp" />
 
                     <!-- Help and Support -->
                     <TextView
@@ -405,7 +408,7 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginBottom="10dp"
                         android:text="@string/aboutApp"
-                        android:textColor="#000"
+                        android:textColor="@color/primaryColor"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -428,7 +431,7 @@
                 android:layout_marginBottom="5dp"
 
                 android:text="@string/logoutText"
-                android:textColor="#000000"
+                android:textColor="@color/primaryColor"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -441,10 +444,10 @@
             android:layout_below="@id/logoutText"
             android:layout_centerInParent="true"
 
-            app:cardBackgroundColor="#fff"
+            app:cardBackgroundColor="@color/backgroundCard"
             app:cardCornerRadius="10dp">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -466,11 +469,12 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="10dp"
+                    android:layout_centerInParent="true"
                     android:text="@string/logoutButtonProfilePage"
-                    android:textColor="#000"
+                    android:textColor="@color/red"
                     android:textSize="20sp" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 

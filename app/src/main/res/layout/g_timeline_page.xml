@@ -74,6 +74,7 @@
             android:layout_below="@id/header">
 
             <RelativeLayout
+                android:id="@+id/checkTimeline"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -81,23 +82,37 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Check Our Time Line" />
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Check Our Time Line"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="22sp"/>
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
                     android:layout_below="@id/textView"
-                    android:text="Location" />
+                    android:text="Location"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
                     android:layout_below="@id/textView2"
-                    android:text="Room" />
+                    android:text="Room"
+                    android:textSize="16sp"/>
 
                 <RelativeLayout
+                    android:id="@+id/time1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -106,45 +121,261 @@
                     <TextView
                         android:id="@+id/timeline1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="110dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_alignEnd="@id/check1"
 
                         android:text="2:00 - 5:00"
                         android:textSize="16sp"/>
 
+                    <TextView
+                        android:id="@+id/major1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@id/check1"
+
+                        android:text="IT Engineering"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/description1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/major1"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignStart="@id/check1"
+
+                        android:text="Description"
+                        android:textSize="16sp"/>
+
                     <ImageView
                         android:id="@+id/check1"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerHorizontal="true"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="120dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="5dp"
                         android:src="@drawable/ic_action_check" />
 
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="5dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/timeline1"
+
+                        android:layout_marginStart="131dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#629725" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/time2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/time1">
+
                     <TextView
                         android:id="@+id/timeline2"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginEnd="70dp"
+                        android:layout_height="25dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_alignEnd="@id/check2"
+
+                        android:text="2:00 - 5:00"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/major2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@id/check2"
 
                         android:text="IT Engineering"
-                        android:textSize="18sp"/>
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/description2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/major2"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignStart="@id/check2"
+
+                        android:text="Description"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:id="@+id/check2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ic_action_check" />
 
                     <View
+                        android:id="@+id/line2"
                         android:layout_width="5dp"
-                        android:layout_height="150dp"
-                        android:layout_below="@id/check1"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/timeline2"
 
-                        android:layout_centerInParent="true"
-                        android:background="#629725"
-                        />
+                        android:layout_marginStart="131dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#629725" />
                 </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/time3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/time2">
+
+                    <TextView
+                        android:id="@+id/timeline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_alignEnd="@id/check3"
+
+                        android:text="2:00 - 5:00"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/major3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@id/check3"
+
+                        android:text="IT Engineering"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/description3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/major3"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignStart="@id/check3"
+
+                        android:text="Description"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:id="@+id/check3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ic_action_check" />
+
+                    <View
+                        android:id="@+id/line3"
+                        android:layout_width="5dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/timeline3"
+
+                        android:layout_marginStart="131dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#629725" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/time4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/time3">
+
+                    <TextView
+                        android:id="@+id/timeline4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_alignEnd="@id/check4"
+
+                        android:text="2:00 - 5:00"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/major4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@id/check4"
+
+                        android:text="IT Engineering"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/description4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/major4"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignStart="@id/check4"
+
+                        android:text="Description"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:id="@+id/check4"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ic_action_check" />
+
+                    <View
+                        android:id="@+id/line4"
+                        android:layout_width="5dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/timeline4"
+
+                        android:layout_marginStart="131dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#629725" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/time4"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="60dp"
+
+                    android:background="@drawable/rounded_corner"
+
+                    android:text="Join Meeting"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="16sp"/>
+
 
 
             </RelativeLayout>
+
 
         </ScrollView>
 

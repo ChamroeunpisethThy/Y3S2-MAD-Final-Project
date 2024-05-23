@@ -484,137 +484,140 @@
 
 
 
-        <!-- footer -->
-        <LinearLayout
-            android:id="@+id/foot"
 
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:background="#f0f0f0"
-            android:gravity="center">
 
-            <!-- Home -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginHorizontal="5dp">
+<!--        &lt;!&ndash; footer &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/foot"-->
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_home" />
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:background="#f0f0f0"-->
+<!--            android:gravity="center">-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+<!--            &lt;!&ndash; Home &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginHorizontal="5dp">-->
 
-                    android:layout_gravity="center"
-                    android:text="Home"
-                    android:textSize="14sp"
-                    android:textStyle="bold"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:src="@drawable/ic_action_home" />-->
 
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
 
-            <!-- Meeting -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginHorizontal="5dp">
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="Home"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"/>-->
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_friend" />
+<!--            </LinearLayout>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+<!--            &lt;!&ndash; Meeting &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginHorizontal="5dp">-->
 
-                    android:layout_gravity="center"
-                    android:text="Meeting"
-                    android:textSize="14sp"
-                    android:textStyle="bold"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:src="@drawable/ic_action_friend" />-->
 
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
 
-            <!-- Add -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginHorizontal="5dp">
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="Meeting"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"/>-->
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_add" />
+<!--            </LinearLayout>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+<!--            &lt;!&ndash; Add &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginHorizontal="5dp">-->
 
-                    android:layout_gravity="center"
-                    android:text="Add"
-                    android:textSize="14sp"
-                    android:textStyle="bold"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:src="@drawable/ic_action_add" />-->
 
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
 
-            <!-- Calendar -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginHorizontal="5dp">
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="Add"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"/>-->
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_calendar" />
+<!--            </LinearLayout>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+<!--            &lt;!&ndash; Calendar &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginHorizontal="5dp">-->
 
-                    android:layout_gravity="center"
-                    android:text="Calendar"
-                    android:textSize="14sp"
-                    android:textStyle="bold"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:src="@drawable/ic_action_calendar" />-->
 
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
 
-            <!-- Profile -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginHorizontal="5dp">
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="Calendar"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"/>-->
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_profile" />
+<!--            </LinearLayout>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+<!--            &lt;!&ndash; Profile &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginHorizontal="5dp">-->
 
-                    android:layout_gravity="center"
-                    android:text="Profile"
-                    android:textSize="14sp"
-                    android:textStyle="bold"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:src="@drawable/ic_action_profile" />-->
 
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
 
-        </LinearLayout>
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="Profile"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
