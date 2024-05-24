@@ -1,38 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Background -->
+<!-- Background -->
     <color name="backgroundColor">#000</color>
-
     <color name="bgcolor">#e7edf9</color>
 
-    <!-- Login style and Rounded corner-->
+<!-- Header bar -->
+    <color name="headerBar">#f0f0f0</color> <!-- Anti Flash White-->
+    <color name="headerText">#000</color>
+
+<!-- Login style and Rounded corner-->
     <color name="gainsboro">#e2e2e2</color>
     <color name="cyan">#e7edf9</color>
 
-    <!-- Text -->
+<!-- Text -->
     <color name="primaryColor">#fff</color> <!-- black -->
     <color name="secondaryColor">#fff</color> <!-- white -->
     <color name="tertiaryColor">#123456</color> <!-- dark blue -->
 
-    <color name="seeAll">#616161</color> <!-- gray -->
+<!-- Line -->
+    <color name="line">#454545</color>
 
-    <!-- Button-->
+<!-- Button-->
     <color name="backgroundButton">#123456</color> <!-- dark blue -->
     <color name="buttonText">#fff</color>
     <color name="scrollViewButton">#212121</color> <!-- snow -->
+    <color name="backgroundMeetingButton">#3F51B5</color>
 
-    <!-- Header bar -->
-    <color name="headerBar">#f0f0f0</color> <!-- Anti Flash White-->
-    <color name="headerText">#000</color>
-
-
-    <!-- card -->
+<!-- card -->
     <color name="card">#673AB7</color> <!-- purple -->
     <color name="backgroundCard">#212121</color>
 
-    <color name="white">#fff</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
     <color name="blue">#3F51B5</color>
     <color name="red">#ff0000</color>
+    <color name="gray">#808080</color>
+    <color name="darkGray">#616161</color> <!-- dark gray -->
 
 
 

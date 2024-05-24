@@ -9,7 +9,6 @@
     <stroke
         android:width="2dp"
         android:color="@color/cyan" /> <!--  stroke for defining a border for view -->
-
     <size
         android:height="40dp"
         android:width="40dp" />

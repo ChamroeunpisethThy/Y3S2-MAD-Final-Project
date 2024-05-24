@@ -14,10 +14,10 @@
 
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#f0f0f0">
+            android:background="@color/headerBar">
 
             <ImageView
-                android:id="@+id/dehaze"
+                android:id="@+id/backButton"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
 
@@ -26,18 +26,18 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
 
-                android:src="@drawable/ic_action_dehaze" />
+                android:src="@drawable/ic_action_back" />
 
             <TextView
                 android:id="@+id/page_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:layout_alignLeft="@id/dehaze"
+                android:layout_alignStart="@id/backButton"
 
                 android:layout_centerInParent="true"
                 android:layout_marginStart="50dp"
-                android:text="Timeline"
+                android:text="@string/timelinePage"
                 android:textColor="#000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -82,75 +82,81 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="60dp"
+                    android:layout_marginStart="30dp"
                     android:layout_marginTop="15dp"
-                    android:text="Check Our Time Line"
+                    android:text="@string/checkTimeLine"
                     android:textColor="@color/blue"
-                    android:textStyle="bold"
-                    android:textSize="22sp"/>
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginTop="5dp"
                     android:layout_below="@id/textView"
-                    android:text="Location"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/primaryColor"
+                    android:text="@string/location"
                     android:textSize="18sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="60dp"
+                    android:layout_below="@id/textView2"
+                    android:layout_marginStart="30dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
-                    android:layout_below="@id/textView2"
-                    android:text="Room"
-                    android:textSize="16sp"/>
+                    android:text="@string/building"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <RelativeLayout
                     android:id="@+id/time1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_below="@id/textView3">
+                    android:layout_below="@id/textView3"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/timeline1"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
+                        android:layout_alignEnd="@id/check1"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="50dp"
-                        android:layout_alignEnd="@id/check1"
 
-                        android:text="2:00 - 5:00"
-                        android:textSize="16sp"/>
+                        android:text="@string/timelineMajor1"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/major1"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
+                        android:layout_alignStart="@id/check1"
                         android:layout_marginStart="40dp"
                         android:layout_marginTop="10dp"
-                        android:layout_alignStart="@id/check1"
 
-                        android:text="IT Engineering"
-                        android:textSize="16sp"/>
+                        android:text="@string/timelinePageMajor1"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/description1"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
                         android:layout_below="@id/major1"
+                        android:layout_alignStart="@id/check1"
                         android:layout_marginStart="40dp"
                         android:layout_marginTop="5dp"
-                        android:layout_alignStart="@id/check1"
 
-                        android:text="Description"
-                        android:textSize="16sp"/>
+                        android:text="@string/description1"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
 
                     <ImageView
                         android:id="@+id/check1"
@@ -176,42 +182,43 @@
                     android:id="@+id/time2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_below="@id/time1">
+                    android:layout_below="@id/time1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/timeline2"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
+                        android:layout_alignEnd="@id/check2"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="50dp"
-                        android:layout_alignEnd="@id/check2"
 
-                        android:text="2:00 - 5:00"
-                        android:textSize="16sp"/>
+                        android:text="@string/timelineMajor2"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/major2"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
+                        android:layout_alignStart="@id/check2"
                         android:layout_marginStart="40dp"
                         android:layout_marginTop="10dp"
-                        android:layout_alignStart="@id/check2"
 
-                        android:text="IT Engineering"
-                        android:textSize="16sp"/>
+                        android:text="@string/timelinePageMajor2"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/description2"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
                         android:layout_below="@id/major2"
+                        android:layout_alignStart="@id/check2"
                         android:layout_marginStart="40dp"
                         android:layout_marginTop="5dp"
-                        android:layout_alignStart="@id/check2"
 
-                        android:text="Description"
-                        android:textSize="16sp"/>
+                        android:text="@string/description2"
+                        android:textSize="16sp" />
 
                     <ImageView
                         android:id="@+id/check2"
@@ -237,42 +244,45 @@
                     android:id="@+id/time3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_below="@id/time2">
+                    android:layout_below="@id/time2"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/timeline3"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
+                        android:layout_alignEnd="@id/check3"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="50dp"
-                        android:layout_alignEnd="@id/check3"
 
-                        android:text="2:00 - 5:00"
-                        android:textSize="16sp"/>
+                        android:text="@string/timelineMajor3"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/major3"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
+                        android:layout_alignStart="@id/check3"
                         android:layout_marginStart="40dp"
                         android:layout_marginTop="10dp"
-                        android:layout_alignStart="@id/check3"
 
-                        android:text="IT Engineering"
-                        android:textSize="16sp"/>
+                        android:text="@string/timelinePageMajor3"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/description3"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
                         android:layout_below="@id/major3"
+                        android:layout_alignStart="@id/check3"
                         android:layout_marginStart="40dp"
                         android:layout_marginTop="5dp"
-                        android:layout_alignStart="@id/check3"
 
-                        android:text="Description"
-                        android:textSize="16sp"/>
+                        android:text="@string/description3"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
 
                     <ImageView
                         android:id="@+id/check3"
@@ -298,42 +308,45 @@
                     android:id="@+id/time4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_below="@id/time3">
+                    android:layout_below="@id/time3"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/timeline4"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
+                        android:layout_alignEnd="@id/check4"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="50dp"
-                        android:layout_alignEnd="@id/check4"
 
-                        android:text="2:00 - 5:00"
-                        android:textSize="16sp"/>
+                        android:text="@string/timelineMajor4"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/major4"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
+                        android:layout_alignStart="@id/check4"
                         android:layout_marginStart="40dp"
                         android:layout_marginTop="10dp"
-                        android:layout_alignStart="@id/check4"
 
-                        android:text="IT Engineering"
-                        android:textSize="16sp"/>
+                        android:text="@string/timelinePageMajor4"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/description4"
                         android:layout_width="wrap_content"
                         android:layout_height="25dp"
                         android:layout_below="@id/major4"
+                        android:layout_alignStart="@id/check4"
                         android:layout_marginStart="40dp"
                         android:layout_marginTop="5dp"
-                        android:layout_alignStart="@id/check4"
 
-                        android:text="Description"
-                        android:textSize="16sp"/>
+                        android:text="@string/description4"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
 
                     <ImageView
                         android:id="@+id/check4"
@@ -360,35 +373,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_below="@id/time4"
+                    android:layout_centerInParent="true"
                     android:layout_marginVertical="10dp"
                     android:layout_marginStart="60dp"
-                    android:layout_marginBottom="10dp"
+
                     android:layout_marginEnd="60dp"
+                    android:layout_marginBottom="10dp"
 
                     android:background="@drawable/rounded_corner"
 
-                    android:text="Join Meeting"
+                    android:text="@string/joinMeetingButtonTimelinePage"
                     android:textAllCaps="false"
-                    android:textColor="#fff"
-                    android:textSize="16sp"/>
-
+                    android:textColor="@color/buttonText"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
             </RelativeLayout>
 
-
         </ScrollView>
-
-        <!-- Account -->
-
-        <!-- My account layout -->
-
-        <!-- More text -->
-
-        <!-- More layout -->
-
-
-        <!-- footer -->
-
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

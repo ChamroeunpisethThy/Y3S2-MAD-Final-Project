@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e7edf9">
+    android:background="@color/backgroundColor">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -13,31 +17,19 @@
 
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#f0f0f0">
-
-            <ImageView
-                android:id="@+id/dehaze"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-
-                android:src="@drawable/ic_action_dehaze" />
+            android:background="@color/headerBar">
 
             <TextView
                 android:id="@+id/page_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:layout_alignLeft="@id/dehaze"
+                android:layout_alignParentStart="true"
 
                 android:layout_centerInParent="true"
-                android:layout_marginStart="50dp"
-                android:text="Joiners List"
-                android:textColor="#000"
+                android:layout_marginStart="25dp"
+                android:text="@string/joinersListPage"
+                android:textColor="@color/headerText"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -66,98 +58,98 @@
                 android:src="@drawable/ic_action_setting" />
         </RelativeLayout>
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@id/header"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:background="@drawable/rounded_corner"
-
-            android:padding="16dp"
-            android:text="Username"
-            android:textColor="#000"
-            android:textSize="16sp" />
-
-
-        <RelativeLayout
-            android:id="@+id/joiners_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editText"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="10dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="18dp">
-
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:src="@drawable/ic_action_box" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-
-                    android:text="User"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-
-                android:text="Name"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="20dp"
-
-                android:text="School"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-        </RelativeLayout>
-
-        <View
-            android:id="@+id/line"
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="#454545"
-            android:layout_below="@id/joiners_list"
-
-            android:layout_marginTop="10dp"/>
-
-
+        <!-- Scroll View-->
         <ScrollView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_below="@id/line">
+            android:layout_below="@id/header">
 
             <LinearLayout
+                android:id="@+id/layoutScrollView"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <android.widget.SearchView
+                    android:id="@+id/searchBar"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:background="@drawable/rounded_corner"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="@string/searchJoinerListPage"/>
+
+                <RelativeLayout
+                    android:id="@+id/joiners_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/checkBox"
+
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+
+                        android:layout_marginStart="18dp"
+
+                        android:contentDescription="@string/userCheckBox"
+                        android:src="@drawable/ic_action_box" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignStart="@id/checkBox"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="30dp"
+
+                        android:text="@string/userCheckBox"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+
+                        android:text="@string/nameText"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+
+                        android:text="@string/schoolText"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@color/line" />
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -167,7 +159,8 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="25dp"
-                        android:src="@drawable/ic_action_profile" />
+                        android:src="@drawable/ic_action_profile"
+                        android:contentDescription="@string/person1" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -176,7 +169,8 @@
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
 
-                        android:text="Seth"
+                        android:text="@string/person1"
+                        android:textColor="@color/primaryColor"
                         android:textSize="18sp" />
 
                     <TextView
@@ -187,7 +181,8 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="20dp"
 
-                        android:text="Rupp"
+                        android:text="@string/rupp"
+                        android:textColor="@color/primaryColor"
                         android:textSize="18sp" />
                 </RelativeLayout>
 
@@ -198,7 +193,7 @@
 
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="20dp"
-                    android:background="#454545" />
+                    android:background="@color/line" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -209,7 +204,8 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="25dp"
-                        android:src="@drawable/ic_action_profile" />
+                        android:src="@drawable/ic_action_profile"
+                        android:contentDescription="@string/person2" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -218,7 +214,8 @@
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
 
-                        android:text="Cham"
+                        android:text="@string/person2"
+                        android:textColor="@color/primaryColor"
                         android:textSize="18sp" />
 
                     <TextView
@@ -229,7 +226,8 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="20dp"
 
-                        android:text="Rupp"
+                        android:text="@string/rupp"
+                        android:textColor="@color/primaryColor"
                         android:textSize="18sp" />
                 </RelativeLayout>
 
@@ -240,7 +238,7 @@
 
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="20dp"
-                    android:background="#454545" />
+                    android:background="@color/line" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -251,7 +249,8 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="25dp"
-                        android:src="@drawable/ic_action_profile" />
+                        android:src="@drawable/ic_action_profile"
+                        android:contentDescription="@string/person3" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -260,7 +259,8 @@
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
 
-                        android:text="Soth"
+                        android:text="@string/person3"
+                        android:textColor="@color/primaryColor"
                         android:textSize="18sp" />
 
                     <TextView
@@ -271,7 +271,8 @@
                         android:layout_centerVertical="true"
                         android:layout_marginEnd="20dp"
 
-                        android:text="Rupp"
+                        android:text="@string/rupp"
+                        android:textColor="@color/primaryColor"
                         android:textSize="18sp" />
                 </RelativeLayout>
 
@@ -282,144 +283,56 @@
 
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="20dp"
-                    android:background="#454545" />
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/ic_action_profile"
+                        android:contentDescription="@string/person4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+
+                        android:text="@string/person4"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+
+                        android:text="@string/rupp"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="20dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/line" />
 
             </LinearLayout>
+
         </ScrollView>
 
-
-        <!-- footer -->
-        <LinearLayout
-            android:id="@+id/foot"
-
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:background="#f0f0f0"
-            android:gravity="center">
-
-            <!-- Home -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginHorizontal="5dp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_home" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_gravity="center"
-                    android:text="Home"
-                    android:textSize="14sp"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <!-- Meeting -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginHorizontal="5dp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_friend" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_gravity="center"
-                    android:text="Meeting"
-                    android:textSize="14sp"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <!-- Add -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginHorizontal="5dp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_add" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_gravity="center"
-                    android:text="Add"
-                    android:textSize="14sp"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <!-- Calendar -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginHorizontal="5dp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_calendar" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_gravity="center"
-                    android:text="Calendar"
-                    android:textSize="14sp"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <!-- Profile -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginHorizontal="5dp">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_profile" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_gravity="center"
-                    android:text="Profile"
-                    android:textSize="14sp"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
     </RelativeLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -140,7 +140,7 @@
                         android:padding="5dp"
 
                         android:text="@string/loginText"
-                        android:textColor="@color/tertiaryColor"
+                        android:textColor="@color/blue"
                         android:textSize="18sp" />
 
                 </LinearLayout>

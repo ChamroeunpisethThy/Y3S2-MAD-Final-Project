@@ -18,29 +18,93 @@
 
     <!-- Home Page -->
     <string name="homePage">Home</string>
-    <string name="ITEngineering">IT Engineering</string>
+    <string name="searchHomePage">Search...</string>
+     <string name="ITEngineering">IT Engineering</string>
     <string name="bioEngineering">Bio Engineering</string>
     <string name="dataScience">Data Science</string>
     <string name="recommendation">Recommendation</string>
-    <string name="seeAll">See all</string>
-    <string name="favorited">Favorite</string>
+    <string name="seeAll">See All</string>
+    <string name="favorite">Favorite</string>
 
     <!-- Profile Page -->
     <string name="profilePage">Profile</string>
     <string name="welcomeProfilePage">Welcome Visoth</string>
     <string name="roleProfilePage">Role: Student</string>
+
     <string name="myAccount">My Account</string>
     <string name="myAccountText">Make change to your account</string>
+
     <string name="requestAsAdmin">Request As Admin</string>
     <string name="requestAsAdminText">Manage your saved account</string>
+
     <string name="twoFactorAuthentication">Two-Factor Authentication</string>
     <string name="twoFactorAuthenticationText">Further secure your account for safety</string>
+
     <string name="settingText">Setting</string>
     <string name="helpAndSupport">Help and Support</string>
     <string name="aboutApp">About app</string>
+
     <string name="logoutText">Logout</string>
     <string name="logoutButtonProfilePage">Log Out</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Meeting Page -->
+    <string name="meetingPage">Meeting</string>
+    <string name="todayText">Today</string>
+    <string name="yesterdayText">Yesterday</string>
+
+    <string name="headerMeeting1">Project Meeting</string>
+    <string name="dateMeetingPage1">1:00 PM, ITE, MAD-Project</string>
+    <string name="peopleJoinMeeting1">+22 other</string>
+    <string name="joinMeetingButton">Join</string>
+
+    <string name="headerMeeting2">WCT Meeting</string>
+    <string name="dateMeetingPage2">2:00 PM, ITE, WCT-Project</string>
+    <string name="peopleJoinMeeting2">+39 other</string>
+    <string name="endMeetingButton">End</string>
+
+    <string name="headerMeeting3">English</string>
+    <string name="dateMeetingPage3">1:00 PM, ITE, English</string>
+    <string name="peopleJoinMeeting3">+42 other</string>
+
+    <string name="headerMeeting4">OS</string>
+    <string name="dateMeetingPage4">3:00 PM, ITE, OS</string>
+    <string name="peopleJoinMeeting4">+45 other</string>
+
+    <!-- Joiner List -->
+    <string name="joinersListPage">Joiners List</string>
+    <string name="searchJoinerListPage">Username</string>
+    <string name="userCheckBox">User</string>
+    <string name="nameText">Name</string>
+    <string name="schoolText">School</string>
+    <string name="rupp">RUPP</string>
+    <string name="person1">Srun Davith</string>
+    <string name="person2">Sak Vicham</string>
+    <string name="person3">Chet Sovisoth</string>
+    <string name="person4">Thy Chamroeunpiseth</string>
+
+    <!-- Timeline Page -->
+    <string name="timelinePage">Timeline</string>
+    <string name="checkTimeLine">Check Our Time Line</string>
+    <string name="location">Location: Royal University of Phnom Penh</string>
+    <string name="building">Building: Stem 306</string>
+
+    <string name="timelineMajor1">1:00 - 2:30</string>
+    <string name="timelinePageMajor1">Database</string>
+    <string name="description1">Description</string>
+
+    <string name="timelineMajor2">2:30 - 4:00</string>
+    <string name="timelinePageMajor2">Database Lab</string>
+    <string name="description2">Description</string>
+
+    <string name="timelineMajor3">5:00 - 6:30</string>
+    <string name="timelinePageMajor3">MAD</string>
+    <string name="description3">Description</string>
+
+    <string name="timelineMajor4">6:30 - 8:00</string>
+    <string name="timelinePageMajor4">MAD Lab</string>
+    <string name="description4">Description</string>
+
+    <string name="joinMeetingButtonTimelinePage">Join Meeting</string>
+
 
 </resources>

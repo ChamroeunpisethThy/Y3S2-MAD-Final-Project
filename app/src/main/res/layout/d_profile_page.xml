@@ -11,7 +11,6 @@
         android:layout_height="match_parent">
 
         <!-- Header -->
-
         <RelativeLayout
             android:id="@+id/header"
 
@@ -19,27 +18,15 @@
             android:layout_height="50dp"
             android:background="@color/headerBar">
 
-            <ImageView
-                android:id="@+id/dehaze"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-
-                android:src="@drawable/ic_action_dehaze" />
-
             <TextView
                 android:id="@+id/page_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:layout_alignStart="@id/dehaze"
-
+                android:layout_alignParentStart="true"
                 android:layout_centerInParent="true"
-                android:layout_marginStart="50dp"
+
+                android:layout_marginStart="25dp"
                 android:text="@string/profilePage"
                 android:textColor="@color/headerText"
                 android:textSize="24sp"
@@ -72,6 +59,7 @@
         </RelativeLayout>
 
         <!-- Account -->
+
         <androidx.cardview.widget.CardView
             android:id="@+id/card"
 
@@ -396,8 +384,8 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:src="@drawable/ic_action_about"
-                        android:contentDescription="@string/aboutApp" />
+                        android:contentDescription="@string/aboutApp"
+                        android:src="@drawable/ic_action_about" />
 
                     <!-- Help and Support -->
                     <TextView
@@ -452,8 +440,8 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_marginHorizontal="15dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="10dp"
@@ -466,10 +454,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
+                    android:layout_centerInParent="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="10dp"
-                    android:layout_centerInParent="true"
                     android:text="@string/logoutButtonProfilePage"
                     android:textColor="@color/red"
                     android:textSize="20sp" />
@@ -478,138 +466,6 @@
 
         </androidx.cardview.widget.CardView>
 
-
-        <!-- footer -->
-        <LinearLayout
-            android:id="@+id/foot"
-
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:background="#f0f0f0"
-            android:gravity="center">
-
-            <!-- Home -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_home" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_gravity="center"
-                    android:text="Home"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <!-- Meeting -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_friend" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_gravity="center"
-                    android:text="Meeting"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <!-- Add -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_add" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_gravity="center"
-                    android:text="Add"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <!-- Calendar -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_calendar" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_gravity="center"
-                    android:text="Calendar"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <!-- Profile -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/ic_action_profile" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_gravity="center"
-                    android:text="Profile"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
     </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

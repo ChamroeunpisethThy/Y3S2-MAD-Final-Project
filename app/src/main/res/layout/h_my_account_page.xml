@@ -1,6 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Header -->
+
+        <RelativeLayout
+            android:id="@+id/header"
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+
+                android:text="My Account"
+                android:textColor="@color/primaryColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/backButton"
+
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+
+                android:src="@drawable/ic_action_back" />
+
+            <TextView
+                android:id="@+id/done"
+
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+
+                android:text="Done"
+                android:textColor="#7F00FF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header">
+
+            <RelativeLayout
+                android:id="@+id/layoutScrollView"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/editProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_action_profile1" />
+
+                    <TextView
+                        android:id="@+id/setNewPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/profile"
+
+                        android:layout_centerInParent="true"
+                        android:text="Set New Photo"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/editUserName"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editProfile"
+                    android:layout_centerInParent="true"
+
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+
+                    app:cardBackgroundColor="@color/backgroundCard"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/editFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/backgroundCard"
+
+                            android:padding="16dp"
+                            android:text="First name"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="16dp"
+
+                            android:layout_marginEnd="16dp"
+                            android:background="#454545" />
+
+                        <EditText
+                            android:id="@+id/editLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@color/backgroundCard"
+
+
+                            android:padding="16dp"
+                            android:text="Last name"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/usernameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editUserName"
+
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:text="Enter your name and add an optional profile photo."
+                    android:textColor="@color/primaryColor"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/addDOB"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/usernameText"
+                    android:layout_centerInParent="true"
+
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+
+                    app:cardBackgroundColor="@color/backgroundCard"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/DOB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/backgroundCard"
+
+                            android:padding="16dp"
+                            android:text="Date of Birth"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/DOBText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addDOB"
+
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:text="Enter your Birthday."
+                    android:textColor="@color/primaryColor"/>
+
+            </RelativeLayout>
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
