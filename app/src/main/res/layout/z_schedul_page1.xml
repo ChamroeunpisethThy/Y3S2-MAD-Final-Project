@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor"
-    tools:context=".ScheduleFragment">
+    android:background="#e7edf9">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -40,7 +38,7 @@
 
                 android:layout_centerInParent="true"
                 android:layout_marginStart="50dp"
-                android:text="@string/schedulePage"
+                android:text="Schedule"
                 android:textColor="#000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -73,8 +71,7 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/header">
+            android:layout_height="match_parent" >
 
             <RelativeLayout
                 android:id="@+id/layoutScrollView"
@@ -92,6 +89,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@id/calendar"
+                    android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -106,253 +104,8 @@
 
                             android:layout_marginStart="15dp"
 
-                            android:text="@string/dateSchedulePage1"
-                            android:textColor="@color/blue"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginStart="15dp"
-
-                            android:text="@string/todayText"
-                            android:textColor="@color/blue"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="20dp"
-
-                            android:text="@string/timeSchedulePage1"
-                            android:textColor="@color/primaryColor"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginStart="100dp"
-                            android:text="@string/mad"
-                            android:textColor="@color/primaryColor"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_marginStart="15dp"
-                        android:layout_marginBottom="5dp"
-
-                        android:text="@string/studyHour2"
-                        android:textColor="@color/gray"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginStart="15dp"
-
-                            android:text="@string/dateSchedulePage2"
-                            android:textColor="@color/primaryColor"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginStart="15dp"
-
-                            android:text="@string/tomorrowSchedulePage"
-                            android:textColor="@color/gray"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="20dp"
-
-                            android:text="@string/timeSchedulePage2"
-                            android:textColor="@color/primaryColor"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginStart="100dp"
-                            android:text="@string/ne"
-                            android:textColor="@color/primaryColor"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_marginStart="15dp"
-                        android:layout_marginBottom="5dp"
-
-                        android:text="@string/studyHour1"
-                        android:textColor="@color/gray"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginStart="15dp"
-                            android:layout_marginEnd="20dp"
-
-                            android:text="@string/timeSchedulePage3"
-                            android:textColor="@color/primaryColor"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginStart="100dp"
-                            android:text="@string/wct"
-                            android:textColor="@color/primaryColor"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                    </RelativeLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_marginStart="15dp"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginBottom="15dp"
-
-                        android:text="@string/studyHour2"
-                        android:textColor="@color/gray"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="fill_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="15dp"
-
-                        android:layout_marginEnd="15dp"
-                        android:background="#454545" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginStart="15dp"
-
-                            android:text="@string/dateSchedulePage3"
-                            android:textColor="@color/primaryColor"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginStart="15dp"
-
-                            android:text="@string/sunday"
-                            android:textColor="@color/gray"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_marginStart="15dp"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginBottom="15dp"
-
-                        android:text="@string/noMeeting"
-                        android:textColor="@color/gray"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="fill_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="15dp"
-
-                        android:layout_marginEnd="15dp"
-                        android:background="#454545" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:layout_marginStart="15dp"
-
-                            android:text="@string/dateSchedulePage4"
-                            android:textColor="@color/primaryColor"
+                            android:text="6 Apr"
+                            android:textColor="#3F51B5"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -363,8 +116,8 @@
                             android:layout_marginStart="15dp"
                             android:layout_marginEnd="20dp"
 
-                            android:text="@string/monday"
-                            android:textColor="@color/gray"
+                            android:text="Today"
+                            android:textColor="#3F51B5"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -383,8 +136,201 @@
                             android:layout_marginStart="15dp"
                             android:layout_marginEnd="20dp"
 
-                            android:text="@string/timeSchedulePage4"
-                            android:textColor="@color/primaryColor"
+                            android:text="8:00 AM"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <!--                <ImageView-->
+                        <!--                    android:layout_width="wrap_content"-->
+                        <!--                    android:layout_height="wrap_content"-->
+
+                        <!--                    android:layout_toRightOf="@id/hours"-->
+                        <!--                    android:rotation="-90"-->
+                        <!--                    android:src="@drawable/ic_action_remove" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="100dp"
+                            android:text="Network Engineering"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:text="3hrs"
+                        android:textColor="#808080"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="20dp"
+
+                            android:text="2:00 PM"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <!--                <ImageView-->
+                        <!--                    android:layout_width="wrap_content"-->
+                        <!--                    android:layout_height="wrap_content"-->
+
+                        <!--                    android:layout_toRightOf="@id/hours"-->
+                        <!--                    android:rotation="-90"-->
+                        <!--                    android:src="@drawable/ic_action_remove" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="100dp"
+                            android:text="Web and Cloud Technology"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="15dp"
+
+                        android:text="3hrs"
+                        android:textColor="#808080"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="15dp"
+
+                        android:layout_marginEnd="15dp"
+                        android:background="#454545" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="15dp"
+
+                            android:text="7 Apr"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="20dp"
+
+                            android:text="Tomorrow"
+                            android:textColor="#808080"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="15dp"
+
+                        android:text="No meetings"
+                        android:textColor="#808080"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="15dp"
+
+                        android:layout_marginEnd="15dp"
+                        android:background="#454545" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="15dp"
+
+                            android:text="8 Apr"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="20dp"
+
+                            android:text="Monday"
+                            android:textColor="#808080"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="20dp"
+
+                            android:text="1:00 PM"
+                            android:textColor="#000"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -393,8 +339,8 @@
                             android:layout_height="wrap_content"
 
                             android:layout_marginStart="100dp"
-                            android:text="@string/english"
-                            android:textColor="@color/primaryColor"
+                            android:text="English"
+                            android:textColor="#000"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -402,13 +348,94 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="16dp"
+                        android:layout_height="wrap_content"
 
                         android:layout_marginStart="15dp"
                         android:layout_marginBottom="15dp"
 
-                        android:text="@string/studyHour2"
-                        android:textColor="@color/gray"
+                        android:text="3hrs"
+                        android:textColor="#808080"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="15dp"
+
+                        android:layout_marginEnd="15dp"
+                        android:background="#454545" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="15dp"
+
+                            android:text="8 Apr"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="20dp"
+
+                            android:text="Monday"
+                            android:textColor="#808080"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="20dp"
+
+                            android:text="1:00 PM"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="100dp"
+                            android:text="English"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="15dp"
+
+                        android:text="3hrs"
+                        android:textColor="#808080"
                         android:textSize="12sp"
                         android:textStyle="bold" />
 
@@ -431,136 +458,136 @@
 
 
         <!-- footer -->
-        <!--        <LinearLayout-->
-        <!--            android:id="@+id/foot"-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/foot"-->
 
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="60dp"-->
-        <!--            android:layout_alignParentBottom="true"-->
-        <!--            android:background="#f0f0f0"-->
-        <!--            android:gravity="center">-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:background="#f0f0f0"-->
+<!--            android:gravity="center">-->
 
-        <!--            &lt;!&ndash; Home &ndash;&gt;-->
-        <!--            <LinearLayout-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:orientation="vertical"-->
-        <!--                android:layout_marginHorizontal="5dp">-->
+<!--            &lt;!&ndash; Home &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginHorizontal="5dp">-->
 
-        <!--                <ImageView-->
-        <!--                    android:layout_width="30dp"-->
-        <!--                    android:layout_height="30dp"-->
-        <!--                    android:layout_marginHorizontal="20dp"-->
-        <!--                    android:src="@drawable/ic_action_home" />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:src="@drawable/ic_action_home" />-->
 
-        <!--                <TextView-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
 
-        <!--                    android:layout_gravity="center"-->
-        <!--                    android:text="Home"-->
-        <!--                    android:textSize="14sp"-->
-        <!--                    android:textStyle="bold"/>-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="Home"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"/>-->
 
-        <!--            </LinearLayout>-->
+<!--            </LinearLayout>-->
 
-        <!--            &lt;!&ndash; Meeting &ndash;&gt;-->
-        <!--            <LinearLayout-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:orientation="vertical"-->
-        <!--                android:layout_marginHorizontal="5dp">-->
+<!--            &lt;!&ndash; Meeting &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginHorizontal="5dp">-->
 
-        <!--                <ImageView-->
-        <!--                    android:layout_width="30dp"-->
-        <!--                    android:layout_height="30dp"-->
-        <!--                    android:layout_marginHorizontal="20dp"-->
-        <!--                    android:src="@drawable/ic_action_friend" />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:src="@drawable/ic_action_friend" />-->
 
-        <!--                <TextView-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
 
-        <!--                    android:layout_gravity="center"-->
-        <!--                    android:text="Meeting"-->
-        <!--                    android:textSize="14sp"-->
-        <!--                    android:textStyle="bold"/>-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="Meeting"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"/>-->
 
-        <!--            </LinearLayout>-->
+<!--            </LinearLayout>-->
 
-        <!--            &lt;!&ndash; Add &ndash;&gt;-->
-        <!--            <LinearLayout-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:orientation="vertical"-->
-        <!--                android:layout_marginHorizontal="5dp">-->
+<!--            &lt;!&ndash; Add &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginHorizontal="5dp">-->
 
-        <!--                <ImageView-->
-        <!--                    android:layout_width="30dp"-->
-        <!--                    android:layout_height="30dp"-->
-        <!--                    android:layout_marginHorizontal="20dp"-->
-        <!--                    android:src="@drawable/ic_action_add" />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:src="@drawable/ic_action_add" />-->
 
-        <!--                <TextView-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
 
-        <!--                    android:layout_gravity="center"-->
-        <!--                    android:text="Add"-->
-        <!--                    android:textSize="14sp"-->
-        <!--                    android:textStyle="bold"/>-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="Add"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"/>-->
 
-        <!--            </LinearLayout>-->
+<!--            </LinearLayout>-->
 
-        <!--            &lt;!&ndash; Calendar &ndash;&gt;-->
-        <!--            <LinearLayout-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:orientation="vertical"-->
-        <!--                android:layout_marginHorizontal="5dp">-->
+<!--            &lt;!&ndash; Calendar &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginHorizontal="5dp">-->
 
-        <!--                <ImageView-->
-        <!--                    android:layout_width="30dp"-->
-        <!--                    android:layout_height="30dp"-->
-        <!--                    android:layout_marginHorizontal="20dp"-->
-        <!--                    android:src="@drawable/ic_action_calendar" />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:src="@drawable/ic_action_calendar" />-->
 
-        <!--                <TextView-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
 
-        <!--                    android:layout_gravity="center"-->
-        <!--                    android:text="Calendar"-->
-        <!--                    android:textSize="14sp"-->
-        <!--                    android:textStyle="bold"/>-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="Calendar"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"/>-->
 
-        <!--            </LinearLayout>-->
+<!--            </LinearLayout>-->
 
-        <!--            &lt;!&ndash; Profile &ndash;&gt;-->
-        <!--            <LinearLayout-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:orientation="vertical"-->
-        <!--                android:layout_marginHorizontal="5dp">-->
+<!--            &lt;!&ndash; Profile &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginHorizontal="5dp">-->
 
-        <!--                <ImageView-->
-        <!--                    android:layout_width="30dp"-->
-        <!--                    android:layout_height="30dp"-->
-        <!--                    android:layout_marginHorizontal="20dp"-->
-        <!--                    android:src="@drawable/ic_action_profile" />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:src="@drawable/ic_action_profile" />-->
 
-        <!--                <TextView-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
 
-        <!--                    android:layout_gravity="center"-->
-        <!--                    android:text="Profile"-->
-        <!--                    android:textSize="14sp"-->
-        <!--                    android:textStyle="bold"/>-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="Profile"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"/>-->
 
-        <!--            </LinearLayout>-->
+<!--            </LinearLayout>-->
 
-        <!--        </LinearLayout>-->
+<!--        </LinearLayout>-->
     </RelativeLayout>
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

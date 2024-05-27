@@ -219,7 +219,7 @@
                                 android:backgroundTint="@color/backgroundMeetingButton"
                                 android:text="@string/joinMeetingButton"
                                 android:textAllCaps="false"
-                                android:textColor="@color/buttonText"/>
+                                android:textColor="@color/buttonText" />
 
                         </LinearLayout>
 

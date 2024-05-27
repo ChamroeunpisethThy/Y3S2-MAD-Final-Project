@@ -16,20 +16,11 @@ import kh.edu.ferupp.mad.madproject.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
 
-//    private FragmentHomeBinding binding;
-    @Nullable
+//    private FragmentHomeBinding binding
     @Override
-    public View onCreateView(@Nullable LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle saveInstanceState) {
-        FragmentHomeBinding binding = FragmentHomeBinding.inflate(inflater,container,false);
-        return binding.getRoot();
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_home, container, false);
     }
-//    @Override
-//    public void onDestroxyView() {
-//        super.onDestroyView();
-//        binding = null;
-//    }
-
-
-
 }

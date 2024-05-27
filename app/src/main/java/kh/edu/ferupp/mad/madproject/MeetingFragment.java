@@ -15,8 +15,9 @@ import kh.edu.ferupp.mad.madproject.databinding.FragmentMeetingBinding;
 public class MeetingFragment extends Fragment {
 
     @Override
-    public View onCreateView(@Nullable LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle saveInstanceState) {
-        FragmentMeetingBinding binding = FragmentMeetingBinding.inflate(inflater,container,false);
-        return binding.getRoot();
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_meeting, container, false);
     }
 }

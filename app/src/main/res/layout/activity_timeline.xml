@@ -346,13 +346,13 @@
                     android:layout_below="@id/time4"
                     android:layout_centerInParent="true"
                     android:layout_marginVertical="10dp"
-                    android:layout_marginStart="60dp"
 
+                    android:layout_marginStart="60dp"
                     android:layout_marginEnd="60dp"
+
                     android:layout_marginBottom="10dp"
 
                     android:background="@drawable/rounded_corner"
-
                     android:text="@string/joinMeetingButtonTimelinePage"
                     android:textAllCaps="false"
                     android:textColor="@color/buttonText"

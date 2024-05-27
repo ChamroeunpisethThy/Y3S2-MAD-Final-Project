@@ -27,27 +27,6 @@
     <string name="seeAll">See All</string>
     <string name="favorite">Favorite</string>
 
-    <!-- Profile Page -->
-    <string name="profilePage">Profile</string>
-    <string name="welcomeProfilePage">Welcome Visoth</string>
-    <string name="roleProfilePage">Role: Student</string>
-
-    <string name="myAccount">My Account</string>
-    <string name="myAccountText">Make change to your account</string>
-
-    <string name="requestAsAdmin">Request As Admin</string>
-    <string name="requestAsAdminText">Manage your saved account</string>
-
-    <string name="twoFactorAuthentication">Two-Factor Authentication</string>
-    <string name="twoFactorAuthenticationText">Further secure your account for safety</string>
-
-    <string name="settingText">Setting</string>
-    <string name="helpAndSupport">Help and Support</string>
-    <string name="aboutApp">About app</string>
-
-    <string name="logoutText">Logout</string>
-    <string name="logoutButtonProfilePage">Log Out</string>
-
     <!-- Meeting Page -->
     <string name="meetingPage">Meetings</string>
     <string name="todayText">Today</string>
@@ -70,6 +49,56 @@
     <string name="headerMeeting4">OS</string>
     <string name="dateMeetingPage4">3:00 PM, ITE, OS</string>
     <string name="peopleJoinMeeting4">+45 other</string>
+
+    <!-- Add Meeting Page-->
+    <string name="addPage">Add Meeting</string>
+
+    <!-- Schedule Page-->
+    <string name="schedulePage">Schedule</string>
+    <string name="dateSchedulePage1">31 May</string>
+    <string name="dateSchedulePage2">1 Jun</string>
+    <string name="dateSchedulePage3">2 Jun</string>
+    <string name="dateSchedulePage4">3 Jun</string>
+
+    <string name="tomorrowSchedulePage">Tomorrow</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+
+    <string name="english">English</string>
+    <string name="wct">Web and Cloud Technology</string>
+    <string name="ne">Network Engineering</string>
+    <string name="mad">Mobile Application Development</string>
+
+    <string name="timeSchedulePage1">5:30 PM</string>
+    <string name="timeSchedulePage2">8:00 AM</string>
+    <string name="timeSchedulePage3">2:00 PM</string>
+    <string name="timeSchedulePage4">1:00 PM</string>
+
+    <string name="noMeeting">No meeting</string>
+
+    <string name="studyHour1">4hrs</string>
+    <string name="studyHour2">3hrs</string>
+
+    <!-- Profile Page -->
+    <string name="profilePage">Profile</string>
+    <string name="welcomeProfilePage">Welcome Visoth</string>
+    <string name="roleProfilePage">Role: Student</string>
+
+    <string name="myAccount">My Account</string>
+    <string name="myAccountText">Make change to your account</string>
+
+    <string name="requestAsAdmin">Request As Admin</string>
+    <string name="requestAsAdminText">Manage your saved account</string>
+
+    <string name="twoFactorAuthentication">Two-Factor Authentication</string>
+    <string name="twoFactorAuthenticationText">Further secure your account for safety</string>
+
+    <string name="settingText">Setting</string>
+    <string name="helpAndSupport">Help and Support</string>
+    <string name="aboutApp">About app</string>
+
+    <string name="logoutText">Logout</string>
+    <string name="logoutButtonProfilePage">Log Out</string>
 
     <!-- Joiner List -->
     <string name="joinersListPage">Joiners List</string>
@@ -106,8 +135,6 @@
     <string name="description4">Description</string>
 
     <string name="joinMeetingButtonTimelinePage">Join Meeting</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- About App -->
     <string name="aboutAppPage">About App</string>
@@ -122,8 +149,8 @@
     <string name="scheduleMenu">Schedule</string>
     <string name="profileMenu">Profile</string>
 
-<!-- Add Meeting Page-->
-    <string name="addPage">Add Meeting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
