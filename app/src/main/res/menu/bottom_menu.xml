@@ -2,27 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/home"
+        android:id="@+id/menuHome"
         android:title="Home"
         android:icon="@drawable/ic_action_home"/>
 
     <item
-        android:id="@+id/meeting"
+        android:id="@+id/menuMeeting"
         android:title="Meeting"
         android:icon="@drawable/ic_action_friend"/>
 
     <item
-        android:id="@+id/add"
-        android:title="add"
+        android:id="@+id/menuAdd"
+        android:title="Add"
         android:icon="@drawable/ic_action_add"/>
 
     <item
-        android:id="@+id/calender"
+        android:id="@+id/menuCalender"
         android:title="Calender"
         android:icon="@drawable/ic_action_calendar"/>
 
     <item
-        android:id="@+id/profile"
+        android:id="@+id/menuProfile"
         android:title="Profile"
         android:icon="@drawable/ic_action_profile"/>
 

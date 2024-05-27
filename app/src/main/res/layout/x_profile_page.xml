@@ -194,7 +194,7 @@
                     android:layout_marginStart="20dp"
 
                     android:layout_marginEnd="20dp"
-                    android:background="#454545" />
+                    android:background="@color/line" />
 
                 <!-- Request as admin -->
                 <LinearLayout
@@ -246,7 +246,7 @@
                     android:layout_marginStart="20dp"
 
                     android:layout_marginEnd="20dp"
-                    android:background="#454545" />
+                    android:background="@color/line" />
 
                 <!-- Two Factor -->
                 <LinearLayout
@@ -369,7 +369,7 @@
                     android:layout_marginStart="20dp"
 
                     android:layout_marginEnd="20dp"
-                    android:background="#454545" />
+                    android:background="@color/line" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

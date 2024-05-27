@@ -18,8 +18,8 @@
 
     <!-- Home Page -->
     <string name="homePage">Home</string>
-    <string name="searchHomePage">Search...</string>
-     <string name="ITEngineering">IT Engineering</string>
+    <string name="searchHomePage">Search…</string>
+    <string name="ITEngineering">IT Engineering</string>
     <string name="bioEngineering">Bio Engineering</string>
     <string name="dataScience">Data Science</string>
     <string name="recommendation">Recommendation</string>
@@ -88,23 +88,25 @@
     <string name="location">Location: Royal University of Phnom Penh</string>
     <string name="building">Building: Stem 306</string>
 
-    <string name="timelineMajor1">1:00 - 2:30</string>
+    <string name="timelineMajor1">1:00 – 2:30</string>
     <string name="timelinePageMajor1">Database</string>
     <string name="description1">Description</string>
 
-    <string name="timelineMajor2">2:30 - 4:00</string>
+    <string name="timelineMajor2">2:30 – 4:00</string>
     <string name="timelinePageMajor2">Database Lab</string>
     <string name="description2">Description</string>
 
-    <string name="timelineMajor3">5:00 - 6:30</string>
+    <string name="timelineMajor3">5:00 – 6:30</string>
     <string name="timelinePageMajor3">MAD</string>
     <string name="description3">Description</string>
 
-    <string name="timelineMajor4">6:30 - 8:00</string>
+    <string name="timelineMajor4">6:30 – 8:00</string>
     <string name="timelinePageMajor4">MAD Lab</string>
     <string name="description4">Description</string>
 
     <string name="joinMeetingButtonTimelinePage">Join Meeting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

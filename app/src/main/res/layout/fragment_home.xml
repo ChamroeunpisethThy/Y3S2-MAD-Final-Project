@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor">
+    tools:context=".HomeFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <!-- Header -->
-
         <RelativeLayout
             android:id="@+id/header"
 
@@ -19,27 +17,15 @@
             android:layout_height="50dp"
             android:background="@color/headerBar">
 
-            <ImageView
-                android:id="@+id/dehaze"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-
-                android:src="@drawable/ic_action_dehaze" />
-
             <TextView
                 android:id="@+id/page_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:layout_alignStart="@id/dehaze"
-
+                android:layout_alignParentStart="true"
                 android:layout_centerInParent="true"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="25dp"
+
                 android:text="@string/homePage"
                 android:textColor="@color/headerText"
                 android:textSize="24sp"
@@ -71,18 +57,21 @@
 
         </RelativeLayout>
 
-        <!-- Search View -->
+        <!-- Scroll View -->
         <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/header">
 
             <RelativeLayout
+                android:id="@+id/layoutScrollView"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <android.widget.SearchView
                     android:id="@+id/search_bar"
+
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
 
@@ -93,10 +82,10 @@
 
                     android:background="@drawable/rounded_corner"
                     android:iconifiedByDefault="false"
-                    android:queryHint="Search..." />
+                    android:queryHint="@string/searchHomePage" />
 
                 <HorizontalScrollView
-                    android:id="@+id/recenlySearch"
+                    android:id="@+id/recentlySearch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/search_bar"
@@ -151,7 +140,7 @@
                     android:id="@+id/recommand"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_below="@id/recenlySearch"
+                    android:layout_below="@id/recentlySearch"
 
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="5dp"
@@ -177,7 +166,7 @@
                         android:layout_centerVertical="true"
                         android:text="@string/seeAll"
 
-                        android:textColor="@color/seeAll"
+                        android:textColor="@color/gray"
                         android:textSize="16sp"
 
                         android:textStyle="bold" />
@@ -211,7 +200,7 @@
                         android:layout_height="wrap_content"
 
                         android:layout_centerVertical="true"
-                        android:text="@string/favorited"
+                        android:text="@string/favorite"
                         android:textColor="@color/blue"
                         android:textSize="24sp"
 
@@ -225,7 +214,7 @@
                         android:layout_centerVertical="true"
                         android:text="@string/seeAll"
 
-                        android:textColor="@color/seeAll"
+                        android:textColor="@color/gray"
                         android:textSize="16sp"
 
                         android:textStyle="bold" />
@@ -252,4 +241,5 @@
 
     </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+
