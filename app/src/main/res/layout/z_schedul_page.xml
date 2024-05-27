@@ -15,10 +15,10 @@
 
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#f0f0f0">
+            android:background="@color/headerBar">
 
             <ImageView
-                android:id="@+id/dehaze"
+                android:id="@+id/backButton"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
 
@@ -27,14 +27,14 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
 
-                android:src="@drawable/ic_action_dehaze" />
+                android:src="@drawable/ic_action_back" />
 
             <TextView
                 android:id="@+id/page_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:layout_alignLeft="@id/dehaze"
+                android:layout_alignStart="@id/backButton"
 
                 android:layout_centerInParent="true"
                 android:layout_marginStart="50dp"
@@ -66,6 +66,7 @@
                 android:layout_marginBottom="10dp"
 
                 android:src="@drawable/ic_action_setting" />
+
         </RelativeLayout>
 
         <LinearLayout

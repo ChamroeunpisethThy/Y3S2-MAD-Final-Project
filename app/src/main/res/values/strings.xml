@@ -22,6 +22,7 @@
     <string name="ITEngineering">IT Engineering</string>
     <string name="bioEngineering">Bio Engineering</string>
     <string name="dataScience">Data Science</string>
+    <string name="telecommunication">Telecommunication</string>
     <string name="recommendation">Recommendation</string>
     <string name="seeAll">See All</string>
     <string name="favorite">Favorite</string>
@@ -48,7 +49,7 @@
     <string name="logoutButtonProfilePage">Log Out</string>
 
     <!-- Meeting Page -->
-    <string name="meetingPage">Meeting</string>
+    <string name="meetingPage">Meetings</string>
     <string name="todayText">Today</string>
     <string name="yesterdayText">Yesterday</string>
 
@@ -107,6 +108,22 @@
     <string name="joinMeetingButtonTimelinePage">Join Meeting</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- About App -->
+    <string name="aboutAppPage">About App</string>
+    <string name="nameApp">Meeting</string>
+    <string name="versionApp">Version 1.0</string>
+    <string name="groupProject">ITEngineering-A-G8 Group: 4</string>
+
+    <!-- Bottom Menu Navigation-->
+    <string name="homeMenu">Home</string>
+    <string name="meetingMenu">Meetings</string>
+    <string name="addMenu">Add Meeting</string>
+    <string name="scheduleMenu">Schedule</string>
+    <string name="profileMenu">Profile</string>
+
+<!-- Add Meeting Page-->
+    <string name="addPage">Add Meeting</string>
 
 
 </resources>

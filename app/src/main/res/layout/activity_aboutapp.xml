@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
 
                 android:layout_centerInParent="true"
-                android:text="About App"
+                android:text="@string/aboutAppPage"
                 android:textColor="@color/primaryColor"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -44,11 +44,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_centerInParent="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="60dp"
+            android:layout_centerInParent="true"
 
-            android:text="ITEngineering-A-G8 Group: 4"
+            android:layout_marginBottom="60dp"
+            android:text="@string/groupProject"
             android:textColor="@color/primaryColor"
             android:textSize="14sp" />
 
@@ -78,7 +78,7 @@
                     android:layout_below="@id/profile"
 
                     android:layout_centerInParent="true"
-                    android:text="Name App"
+                    android:text="@string/nameApp"
                     android:textColor="@color/primaryColor"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -90,7 +90,7 @@
                     android:layout_below="@id/nameApp"
 
                     android:layout_centerInParent="true"
-                    android:text="Version 1.0"
+                    android:text="@string/versionApp"
                     android:textColor="@color/gray"
                     android:textSize="18sp" />
 

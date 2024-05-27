@@ -3,27 +3,27 @@
 
     <item
         android:id="@+id/menuHome"
-        android:title="Home"
+        android:title="@string/homeMenu"
         android:icon="@drawable/ic_action_home"/>
 
     <item
         android:id="@+id/menuMeeting"
-        android:title="Meeting"
+        android:title="@string/meetingMenu"
         android:icon="@drawable/ic_action_friend"/>
 
     <item
         android:id="@+id/menuAdd"
-        android:title="Add"
+        android:title="@string/addMenu"
         android:icon="@drawable/ic_action_add"/>
 
     <item
         android:id="@+id/menuCalender"
-        android:title="Calender"
+        android:title="@string/scheduleMenu"
         android:icon="@drawable/ic_action_calendar"/>
 
     <item
         android:id="@+id/menuProfile"
-        android:title="Profile"
+        android:title="@string/profileMenu"
         android:icon="@drawable/ic_action_profile"/>
 
 </menu>

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".HomeFragment">
 
     <RelativeLayout
@@ -133,6 +134,18 @@
                             android:textColor="@color/primaryColor"
                             android:textStyle="bold" />
 
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:backgroundTint="@color/scrollViewButton"
+
+                            android:text="@string/telecommunication"
+                            android:textAllCaps="false"
+                            android:textColor="@color/primaryColor"
+                            android:textStyle="bold" />
+
                     </LinearLayout>
                 </HorizontalScrollView>
 
@@ -185,59 +198,10 @@
                     android:paddingStart="15dp"
                     android:paddingEnd="15dp" />
 
-                <RelativeLayout
-                    android:id="@+id/favoriteText"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/view1"
-
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp">
-
-                    <TextView
-                        android:id="@+id/favorite"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_centerVertical="true"
-                        android:text="@string/favorite"
-                        android:textColor="@color/blue"
-                        android:textSize="24sp"
-
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:text="@string/seeAll"
-
-                        android:textColor="@color/gray"
-                        android:textSize="16sp"
-
-                        android:textStyle="bold" />
-
-                </RelativeLayout>
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/view2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/favoriteText"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginEnd="15dp"
-                    android:paddingStart="15dp"
-                    android:paddingEnd="15dp" />
-
             </RelativeLayout>
 
 
         </ScrollView>
-
 
     </RelativeLayout>
 
