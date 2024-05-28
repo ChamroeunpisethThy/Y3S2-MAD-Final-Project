@@ -98,7 +98,7 @@
     <string name="aboutApp">About app</string>
 
     <string name="logoutText">Logout</string>
-    <string name="logoutButtonProfilePage">Log Out</string>
+    <string name="logoutButton">Log Out</string>
 
     <!-- Joiner List -->
     <string name="joinersListPage">Joiners List</string>
@@ -151,6 +151,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook">facebook</string>
+    <string name="google">google</string>
+    <string name="linkedin">linkedin</string>
+    <string name="felogo">felogo</string>
 
 
 </resources>

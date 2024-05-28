@@ -458,7 +458,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/logoutButtonProfilePage"
+                    android:text="@string/logoutButton"
                     android:textColor="@color/red"
                     android:textSize="20sp" />
 
