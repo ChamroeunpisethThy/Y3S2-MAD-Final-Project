@@ -2,15 +2,15 @@
     <string name="app_name">MAD Project</string>
 
     <!-- Login and Signup Page -->
-    <string name="welcomeLoginPage">ស្វាគមន៍ត្រឡប់មកវិញ</string>
+    <string name="welcomeLoginPage">Welcome Back</string>
     <string name="emailInput">Email</string>
-    <string name="passwordInput">លេខសំងាត់</string>
-    <string name="forgotPassword">ភ្លេចលេខសំងាត់?</string>
+    <string name="passwordInput">Password</string>
+    <string name="forgotPassword">Forgot Password?</string>
     <string name="loginButton">Login</string>
     <string name="noAccount">Don\'t have an account?</string>
 
     <string name="signupText">SignUp</string>
-    <string name="welcomeSignupPage">ស្វាគមន៍</string>
+    <string name="welcomeSignupPage">Welcome</string>
     <string name="confirmPasswordInput">Confirm Password</string>
     <string name="signupButton">Sign Up</string>
     <string name="haveAccount">Have an account?</string>
@@ -18,41 +18,19 @@
 
     <!-- Home Page -->
     <string name="homePage">Home</string>
-    <string name="searchHomePage">ស្វែងរក…</string>
+    <string name="searchHomePage">Search…</string>
     <string name="ITEngineering">IT Engineering</string>
     <string name="bioEngineering">Bio Engineering</string>
     <string name="dataScience">Data Science</string>
     <string name="telecommunication">Telecommunication</string>
     <string name="recommendation">Recommendation</string>
-    <string name="seeAll">មើលទាំងអស់</string>
+    <string name="seeAll">See All</string>
     <string name="favorite">Favorite</string>
 
-
-    <!-- Profile Page -->
-    <string name="profilePage">Profile</string>
-    <string name="welcomeProfilePage">ស្វាគមន៍ Visoth</string>
-    <string name="roleProfilePage">Role: Student</string>
-
-    <string name="myAccount">My Account</string>
-    <string name="myAccountText">Make change to your account</string>
-
-    <string name="requestAsAdmin">Request As Admin</string>
-    <string name="requestAsAdminText">Manage your saved account</string>
-
-    <string name="twoFactorAuthentication">Two-Factor Authentication</string>
-    <string name="twoFactorAuthenticationText">Further secure your account for safety</string>
-
-    <string name="settingText">Setting</string>
-    <string name="helpAndSupport">Help and Support</string>
-    <string name="aboutApp">About app</string>
-
-    <string name="logoutText">Logout</string>
-    <string name="logoutButtonProfilePage">Log Out</string>
-
     <!-- Meeting Page -->
-    <string name="meetingPage">Meeting</string>
-    <string name="todayText">ថ្ងៃនេះ</string>
-    <string name="yesterdayText">ម្សឹលមិញ</string>
+    <string name="meetingPage">Meetings</string>
+    <string name="todayText">Today</string>
+    <string name="yesterdayText">Yesterday</string>
 
     <string name="headerMeeting1">Project Meeting</string>
     <string name="dateMeetingPage1">1:00 PM, ITE, MAD-Project</string>
@@ -72,11 +50,70 @@
     <string name="dateMeetingPage4">3:00 PM, ITE, OS</string>
     <string name="peopleJoinMeeting4">+45 other</string>
 
+    <!-- Add Meeting Page-->
+    <string name="addPage">Add Meeting</string>
+    <string name="nameMeeting">Name Meeting</string>
+    <string name="nameMeetingText">Enter your meeting name.</string>
+    <string name="dateMeeting">Date</string>
+    <string name="timeMeeting">Time</string>
+    <string name="dateAndTimeText">Enter your meeting date and time.</string>
+    <string name="addToSchedule">Add to schedule</string>
+    <string name="descriptionMeeting">Description (optional)</string>
+    <string name="descriptionText">This will help people find your meeting.</string>
+    <string name="createMeetingButton">Create Meeting</string>
+
+    <!-- Schedule Page-->
+    <string name="schedulePage">Schedule</string>
+    <string name="dateSchedulePage1">31 May</string>
+    <string name="dateSchedulePage2">1 Jun</string>
+    <string name="dateSchedulePage3">2 Jun</string>
+    <string name="dateSchedulePage4">3 Jun</string>
+
+    <string name="tomorrowSchedulePage">Tomorrow</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+
+    <string name="english">English</string>
+    <string name="wct">Web and Cloud Technology</string>
+    <string name="ne">Network Engineering</string>
+    <string name="mad">Mobile Application Development</string>
+
+    <string name="timeSchedulePage1">5:30 PM</string>
+    <string name="timeSchedulePage2">8:00 AM</string>
+    <string name="timeSchedulePage3">2:00 PM</string>
+    <string name="timeSchedulePage4">1:00 PM</string>
+
+    <string name="noMeeting">No meeting</string>
+
+    <string name="studyHour1">4hrs</string>
+    <string name="studyHour2">3hrs</string>
+
+    <!-- Profile Page -->
+    <string name="profilePage">Profile</string>
+    <string name="welcomeProfilePage">Welcome Visoth</string>
+    <string name="roleProfilePage">Role: Student</string>
+
+    <string name="myAccount">My Account</string>
+    <string name="myAccountText">Make change to your account</string>
+
+    <string name="requestAsAdmin">Request As Admin</string>
+    <string name="requestAsAdminText">Manage your saved account</string>
+
+    <string name="twoFactorAuthentication">Two-Factor Authentication</string>
+    <string name="twoFactorAuthenticationText">Further secure your account for safety</string>
+
+    <string name="settingText">Setting</string>
+    <string name="helpAndSupport">Help and Support</string>
+    <string name="aboutApp">About app</string>
+
+    <string name="logoutText">Logout</string>
+    <string name="logoutButton">Log Out</string>
+
     <!-- Joiner List -->
     <string name="joinersListPage">Joiners List</string>
-    <string name="searchJoinerListPage">ស្វែងរក</string>
+    <string name="searchJoinerListPage">Username</string>
     <string name="userCheckBox">User</string>
-    <string name="nameText">ឈ្មោះ</string>
+    <string name="nameText">Name</string>
     <string name="schoolText">School</string>
     <string name="rupp">RUPP</string>
     <string name="person1">Srun Davith</string>
@@ -87,8 +124,8 @@
     <!-- Timeline Page -->
     <string name="timelinePage">Timeline</string>
     <string name="checkTimeLine">Check Our Time Line</string>
-    <string name="location">ទីតាំង: Royal University of Phnom Penh</string>
-    <string name="building">អគារ: Stem 306</string>
+    <string name="location">Location: Royal University of Phnom Penh</string>
+    <string name="building">Building: Stem 306</string>
 
     <string name="timelineMajor1">1:00 – 2:30</string>
     <string name="timelinePageMajor1">Database</string>
@@ -107,8 +144,21 @@
     <string name="description4">Description</string>
 
     <string name="joinMeetingButtonTimelinePage">Join Meeting</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- My Account Page -->
+    <string name="myAccountPage">My Account</string>
+    <string name="done">Done</string>
+    <string name="setNewPhoto">Set New Photo</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="userNameText">Enter your name and add an optional profile photo.</string>
+    <string name="bio">Bio</string>
+    <string name="bioText">You can adda few lines about yourself.</string>
+    <string name="dob">Date of birth</string>
+    <string name="dobText">Enter your Birthday.</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="emailAndNumberText">Enter your number and email.</string>
 
     <!-- About App -->
     <string name="aboutAppPage">About App</string>
@@ -118,9 +168,20 @@
 
     <!-- Bottom Menu Navigation-->
     <string name="homeMenu">Home</string>
-    <string name="meetingMenu">Meeting</string>
-    <string name="addMenu">Add</string>
+    <string name="meetingMenu">Meetings</string>
+    <string name="addMenu">Add Meeting</string>
     <string name="scheduleMenu">Schedule</string>
     <string name="profileMenu">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- ID ImageView-->
+    <string name="facebook">facebook</string>
+    <string name="google">google</string>
+    <string name="linkedin">linkedin</string>
+    <string name="felogo">felogo</string>
+
+
 
 </resources>

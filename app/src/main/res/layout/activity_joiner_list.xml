@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor">
+    android:background="@color/backgroundColor"
+    tools:context=".JoinerListActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,6 +15,7 @@
         <!-- Header -->
         <RelativeLayout
             android:id="@+id/header"
+            android:background="@color/headerBar"
 
             android:layout_width="match_parent"
             android:layout_height="60dp">

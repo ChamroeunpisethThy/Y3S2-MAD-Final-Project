@@ -146,6 +146,8 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/myAccount"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -373,11 +375,10 @@
                     android:background="@color/line" />
 
                 <LinearLayout
-                    android:id="@+id/aboutAppLayout"
+                    android:id="@+id/aboutApp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    tools:ignore="UseCompoundDrawables">
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="40dp"
@@ -391,7 +392,6 @@
 
                     <!-- Help and Support -->
                     <TextView
-                        android:id="@+id/aboutApp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
@@ -435,7 +435,6 @@
             android:layout_below="@id/logoutText"
 
             android:layout_centerInParent="true"
-
             android:layout_marginStart="35dp"
             android:backgroundTint="@color/backgroundCard"
             android:text="@string/logoutButton"

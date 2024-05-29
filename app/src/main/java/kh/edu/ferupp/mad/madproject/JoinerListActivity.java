@@ -8,32 +8,21 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MyAccountActivity extends AppCompatActivity {
+public class JoinerListActivity extends AppCompatActivity {
 
     ImageView btnBack;
-    TextView btnDone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_myaccount);
+        setContentView(R.layout.activity_joiner_list);
 
         btnBack = findViewById(R.id.backButton); // back to home fragment
-        btnDone = findViewById(R.id.done);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MyAccountActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
-
-        });
-
-        btnDone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MyAccountActivity.this, MainActivity.class);
+                Intent intent = new Intent(JoinerListActivity.this, MainActivity.class);
                 startActivity(intent);
             }
 

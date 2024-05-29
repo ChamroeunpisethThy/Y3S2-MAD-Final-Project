@@ -52,6 +52,15 @@
 
     <!-- Add Meeting Page-->
     <string name="addPage">Add Meeting</string>
+    <string name="nameMeeting">Name Meeting</string>
+    <string name="nameMeetingText">Enter your meeting name.</string>
+    <string name="dateMeeting">Date</string>
+    <string name="timeMeeting">Time</string>
+    <string name="dateAndTimeText">Enter your meeting date and time.</string>
+    <string name="addToSchedule">Add to schedule</string>
+    <string name="descriptionMeeting">Description (optional)</string>
+    <string name="descriptionText">This will help people find your meeting.</string>
+    <string name="createMeetingButton">Create Meeting</string>
 
     <!-- Schedule Page-->
     <string name="schedulePage">Schedule</string>
@@ -136,6 +145,21 @@
 
     <string name="joinMeetingButtonTimelinePage">Join Meeting</string>
 
+    <!-- My Account Page -->
+    <string name="myAccountPage">My Account</string>
+    <string name="done">Done</string>
+    <string name="setNewPhoto">Set New Photo</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="userNameText">Enter your name and add an optional profile photo.</string>
+    <string name="bio">Bio</string>
+    <string name="bioText">You can adda few lines about yourself.</string>
+    <string name="dob">Date of birth</string>
+    <string name="dobText">Enter your Birthday.</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="emailAndNumberText">Enter your number and email.</string>
+
     <!-- About App -->
     <string name="aboutAppPage">About App</string>
     <string name="nameApp">Meeting</string>
@@ -151,6 +175,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- ID ImageView-->
     <string name="facebook">facebook</string>
     <string name="google">google</string>
     <string name="linkedin">linkedin</string>

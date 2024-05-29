@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".AddFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
 
         <!-- Header -->
         <RelativeLayout
@@ -89,7 +90,7 @@
                         android:padding="16dp"
 
                         android:background="@drawable/login_style"
-                        android:hint="Name Meeting"/>
+                        android:hint="@string/nameMeeting"/>
 
                     <TextView
                         android:id="@+id/nameMeetingText"
@@ -100,7 +101,7 @@
                         android:layout_marginTop="-10dp"
                         android:layout_marginBottom="5dp"
 
-                        android:text="Enter your meeting name."
+                        android:text="@string/nameMeetingText"
                         android:textColor="@color/gray" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -120,7 +121,7 @@
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/email"
-                            android:layout_width="225dp"
+                            android:layout_width="210dp"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/email"
 
@@ -133,7 +134,7 @@
                             android:padding="16dp"
 
                             android:background="@drawable/login_style"
-                            android:hint="Date"/>
+                            android:hint="@string/dateMeeting"/>
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -160,7 +161,7 @@
                             android:padding="16dp"
 
                             android:background="@drawable/login_style"
-                            android:hint="Time"/>
+                            android:hint="@string/timeMeeting"/>
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -174,7 +175,7 @@
                         android:layout_marginTop="-10dp"
                         android:layout_marginBottom="5dp"
 
-                        android:text="Enter your meeting date and time."
+                        android:text="@string/dateAndTimeText"
                         android:textColor="@color/gray" />
 
                 </RelativeLayout>
@@ -188,7 +189,7 @@
                     android:layout_centerInParent="true"
                     android:layout_marginStart="50dp"
                     android:backgroundTint="@color/backgroundMeetingButton"
-                    android:text="Add to schedule"
+                    android:text="@string/addToSchedule"
                     android:textAllCaps="false"
                     android:textColor="@color/buttonText" />
 
@@ -213,7 +214,9 @@
                         android:padding="16dp"
 
                         android:background="@drawable/login_style"
-                        android:hint="Description (optional)"/>
+                        android:hint="@string/descriptionMeeting"/>
+
+
 
                     <TextView
                         android:id="@+id/descriptionText"
@@ -225,7 +228,7 @@
                         android:layout_marginTop="-10dp"
                         android:layout_marginBottom="5dp"
 
-                        android:text="This will help people find your meeting."
+                        android:text="@string/descriptionText"
                         android:textColor="@color/gray" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -243,7 +246,7 @@
 
                     android:backgroundTint="@color/backgroundMeetingButton"
 
-                    android:text="Create Meeting"
+                    android:text="@string/createMeetingButton"
                     android:textAllCaps="false"
                     android:textColor="@color/buttonText"
                     android:textSize="16sp"
