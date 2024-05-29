@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "24259345443",
+    "project_id": "mad-project-a21bc",
+    "storage_bucket": "mad-project-a21bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24259345443:android:24af64c8b7001db6208596",
+        "android_client_info": {
+          "package_name": "kh.edu.ferupp.mad.madproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkiH_A6AZ7fKBjZ-7oSn25675l8HnPGq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
