@@ -8,14 +8,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class AboutAppActivity extends AppCompatActivity {
+public class NotificationActivity extends AppCompatActivity {
 
     ImageView btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aboutapp); // Route activity about app java to xml
+        setContentView(R.layout.activity_notification); // Route activity notification java to xml
 
         btnBack = findViewById(R.id.backButton); // back to home fragment
 
@@ -23,10 +23,11 @@ public class AboutAppActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AboutAppActivity.this, MainActivity.class);
+                Intent intent = new Intent(NotificationActivity.this, MainActivity.class);
                 startActivity(intent);
             }
 
         });
+
     }
 }

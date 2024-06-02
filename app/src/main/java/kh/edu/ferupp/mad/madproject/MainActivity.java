@@ -1,6 +1,9 @@
 package kh.edu.ferupp.mad.madproject;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     private static final int MENU_HOME_ID = R.id.menuHome;
     private static final int MENU_MEETING_ID = R.id.menuMeeting;
     private static final int MENU_ADD_ID = R.id.menuAdd;
-
     private static final int MENU_CALENDAR_ID = R.id.menuCalender;
     private static final int MENU_PROFILE_ID = R.id.menuProfile;
 
@@ -49,8 +51,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
     private void showFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.frameLayout, fragment)

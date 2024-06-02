@@ -1,22 +1,22 @@
 <resources>
     <string name="app_name">MAD Project</string>
 
-    <!-- Login and Signup Page -->
-    <string name="welcomeLoginPage">Welcome Back</string>
+    <!-- Login and Signup Activity -->
+    <string name="welcomeLoginPage">Welcome Back\nPlease Login</string>
     <string name="emailInput">Email</string>
     <string name="passwordInput">Password</string>
     <string name="forgotPassword">Forgot Password?</string>
     <string name="loginButton">Login</string>
     <string name="noAccount">Don\'t have an account?</string>
 
-    <string name="signupText">SignUp</string>
-    <string name="welcomeSignupPage">Welcome</string>
+    <string name="signupText">Sign Up</string>
+    <string name="welcomeSignupPage">Welcome Meeting app\nPlease Register</string>
     <string name="confirmPasswordInput">Confirm Password</string>
     <string name="signupButton">Sign Up</string>
     <string name="haveAccount">Have an account?</string>
     <string name="loginText">Login</string>
 
-    <!-- Home Page -->
+    <!-- Home Fragment -->
     <string name="homePage">Home</string>
     <string name="searchHomePage">Search…</string>
     <string name="ITEngineering">IT Engineering</string>
@@ -27,7 +27,7 @@
     <string name="seeAll">See All</string>
     <string name="favorite">Favorite</string>
 
-    <!-- Meeting Page -->
+    <!-- Meeting Fragment -->
     <string name="meetingPage">Meetings</string>
     <string name="todayText">Today</string>
     <string name="yesterdayText">Yesterday</string>
@@ -50,7 +50,7 @@
     <string name="dateMeetingPage4">3:00 PM, ITE, OS</string>
     <string name="peopleJoinMeeting4">+45 other</string>
 
-    <!-- Add Meeting Page-->
+    <!-- Add Meeting Fragment -->
     <string name="addPage">Add Meeting</string>
     <string name="nameMeeting">Name Meeting</string>
     <string name="nameMeetingText">Enter your meeting name.</string>
@@ -62,7 +62,7 @@
     <string name="descriptionText">This will help people find your meeting.</string>
     <string name="createMeetingButton">Create Meeting</string>
 
-    <!-- Schedule Page-->
+    <!-- Schedule Fragment -->
     <string name="schedulePage">Schedule</string>
     <string name="dateSchedulePage1">31 May</string>
     <string name="dateSchedulePage2">1 Jun</string>
@@ -88,7 +88,7 @@
     <string name="studyHour1">4hrs</string>
     <string name="studyHour2">3hrs</string>
 
-    <!-- Profile Page -->
+    <!-- Profile Fragment -->
     <string name="profilePage">Profile</string>
     <string name="welcomeProfilePage">Welcome Visoth</string>
     <string name="roleProfilePage">Role: Student</string>
@@ -109,7 +109,7 @@
     <string name="logoutText">Logout</string>
     <string name="logoutButton">Log Out</string>
 
-    <!-- Joiner List -->
+    <!-- Joiner List Activity -->
     <string name="joinersListPage">Joiners List</string>
     <string name="searchJoinerListPage">Username</string>
     <string name="userCheckBox">User</string>
@@ -121,7 +121,7 @@
     <string name="person3">Chet Sovisoth</string>
     <string name="person4">Thy Chamroeunpiseth</string>
 
-    <!-- Timeline Page -->
+    <!-- Timeline Activity -->
     <string name="timelinePage">Timeline</string>
     <string name="checkTimeLine">Check Our Time Line</string>
     <string name="location">Location: Royal University of Phnom Penh</string>
@@ -145,7 +145,7 @@
 
     <string name="joinMeetingButtonTimelinePage">Join Meeting</string>
 
-    <!-- My Account Page -->
+    <!-- My Account Activity -->
     <string name="myAccountPage">My Account</string>
     <string name="done">Done</string>
     <string name="setNewPhoto">Set New Photo</string>
@@ -153,30 +153,31 @@
     <string name="lastName">Last Name</string>
     <string name="userNameText">Enter your name and add an optional profile photo.</string>
     <string name="bio">Bio</string>
-    <string name="bioText">You can adda few lines about yourself.</string>
+    <string name="bioText">You can add few lines about yourself.</string>
     <string name="dob">Date of birth</string>
     <string name="dobText">Enter your Birthday.</string>
     <string name="phoneNumber">Phone Number</string>
     <string name="email">Email</string>
     <string name="emailAndNumberText">Enter your number and email.</string>
 
-    <!-- About App -->
+    <!-- About App Activity -->
     <string name="aboutAppPage">About App</string>
     <string name="nameApp">Meeting</string>
     <string name="versionApp">Version 1.0</string>
     <string name="groupProject">ITEngineering-A-G8 Group: 4</string>
 
-    <!-- Bottom Menu Navigation-->
+    <!-- Notification Activity -->
+    <string name="notificationPage">Notification</string>
+    <string name="notiPage">No Notifications</string>
+
+    <!-- Bottom Menu Navigation View -->
     <string name="homeMenu">Home</string>
     <string name="meetingMenu">Meetings</string>
     <string name="addMenu">Add Meeting</string>
     <string name="scheduleMenu">Schedule</string>
     <string name="profileMenu">Profile</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
-    <!-- ID ImageView-->
+    <!-- ID ImageView -->
     <string name="facebook">facebook</string>
     <string name="google">google</string>
     <string name="linkedin">linkedin</string>

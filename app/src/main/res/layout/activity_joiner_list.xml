@@ -140,172 +140,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="25dp"
-                        android:src="@drawable/ic_action_profile"
-                        android:contentDescription="@string/person1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-
-                        android:text="@string/person1"
-                        android:textColor="@color/primaryColor"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="20dp"
-
-                        android:text="@string/rupp"
-                        android:textColor="@color/primaryColor"
-                        android:textSize="18sp" />
                 </RelativeLayout>
-
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginStart="20dp"
-
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="20dp"
-                    android:background="@color/line" />
-
-                <RelativeLayout
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/view2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp">
+                    android:layout_height="match_parent"
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="25dp"
-                        android:src="@drawable/ic_action_profile"
-                        android:contentDescription="@string/person2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-
-                        android:text="@string/person2"
-                        android:textColor="@color/primaryColor"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="20dp"
-
-                        android:text="@string/rupp"
-                        android:textColor="@color/primaryColor"
-                        android:textSize="18sp" />
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginStart="20dp"
-
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="20dp"
-                    android:background="@color/line" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="25dp"
-                        android:src="@drawable/ic_action_profile"
-                        android:contentDescription="@string/person3" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-
-                        android:text="@string/person3"
-                        android:textColor="@color/primaryColor"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="20dp"
-
-                        android:text="@string/rupp"
-                        android:textColor="@color/primaryColor"
-                        android:textSize="18sp" />
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginStart="20dp"
-
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="20dp"
-                    android:background="@color/line" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="25dp"
-                        android:src="@drawable/ic_action_profile"
-                        android:contentDescription="@string/person4" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-
-                        android:text="@string/person4"
-                        android:textColor="@color/primaryColor"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="20dp"
-
-                        android:text="@string/rupp"
-                        android:textColor="@color/primaryColor"
-                        android:textSize="18sp"/>
-                </RelativeLayout>
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp" />
 
                 <View
                     android:layout_width="fill_parent"

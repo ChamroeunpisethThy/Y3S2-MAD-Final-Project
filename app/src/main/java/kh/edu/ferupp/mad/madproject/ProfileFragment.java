@@ -98,6 +98,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -109,6 +110,9 @@ public class ProfileFragment extends Fragment {
 
     private FirebaseAuth auth;
     private Button button;
+    ImageView btnNoti;
+    ImageView btnSetting;
+
     private TextView textView;
     private FirebaseUser user;
     LinearLayout btnMyAccount;
@@ -129,6 +133,9 @@ public class ProfileFragment extends Fragment {
         button = view.findViewById(R.id.logoutButton); // Button logout
         btnMyAccount = view.findViewById(R.id.myAccount); // Route my account activity
         btnAboutApp = view.findViewById(R.id.aboutApp); // Route about app activity
+        btnNoti = view.findViewById(R.id.notificationIcon);
+        btnSetting = view.findViewById(R.id.settingIcon);
+
 
         // Check if user is null
         if (user == null) {
@@ -170,6 +177,23 @@ public class ProfileFragment extends Fragment {
             }
         });
 
+        btnNoti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an intent to start JoinerListActivity
+                Intent intent = new Intent(getActivity(), NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an intent to start JoinerListActivity
+                Intent intent = new Intent(getActivity(), MyAccountActivity.class);
+                startActivity(intent);
+            }
+        });
         return view;
     }
 }
